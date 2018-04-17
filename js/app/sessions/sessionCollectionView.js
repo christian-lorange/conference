@@ -29,30 +29,32 @@ define(function(require, exports, module) {
     var SessionCollectionView = CollectionView.extend({
         ItemView: SessionView,
         routeId: 'sessionCollection',
-		showEmptyPage: function() {
-		    // Should only be for no Starred sessions
-		    var params = {
-		        title: Strings.NO_SESSIONS_TITLE,
-		        message: Strings.NO_SESSIONS_FOUND,
-		        helpInfoBefore: Strings.NO_SESSIONS_INFO_BEFORE,
-		        helpInfoAfter: Strings.NO_SESSIONS_INFO_AFTER,
-		        helpInfoLinkText: Strings.SESSIONS_LINK_TEXT
-		    };
+        showEmptyPage: function() {
+            // Should only be for no Starred sessions
+            var params = {
+                title: Strings.NO_SESSIONS_TITLE,
+                message: Strings.NO_SESSIONS_FOUND,
+                helpInfoBefore: Strings.NO_SESSIONS_INFO_BEFORE,
+                helpInfoAfter: Strings.NO_SESSIONS_INFO_AFTER,
+                helpInfoLinkText: Strings.SESSIONS_LINK_TEXT,
+                returnRouteId: this.options.returnRouteId
+            };
 
-		    var page = _.template(emptyPageTemplate, params);
-		    this.$el.append(page);
-		},
-		initialize: function() {
-		    // call super
-		    CollectionView.prototype.initialize.apply(this, arguments);
-			switch( this.options.type ) {
-			    case 'starred':
-    			    this.routeId = 'starredSessionCollection';
-    			    break;
-    			default:
-    			    this.routeId = 'sessionCollection';
-			}
-		}
+            var page = _.template(emptyPageTemplate, params);
+            this.$el.append(page);
+        },
+        initialize: function() {
+            switch( this.options.type ) {
+                case 'starred':
+                    this.routeId = 'starredSessionCollection';
+                    break;
+                default:
+                    this.routeId = 'sessionCollection';
+            }
+            
+            // call super
+            CollectionView.prototype.initialize.apply(this, arguments);
+        }
     });
     
     return SessionCollectionView;

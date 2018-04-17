@@ -35,7 +35,7 @@ define(function(require, exports, module) {
                 timeFlag: timeFlag.NONE,
                 starred: false,
                 loved: false
-            }
+            };
         },
         
         storageId: 'session',
@@ -81,18 +81,24 @@ define(function(require, exports, module) {
         initialize: function() {
             this.retrieveData();
             this.on('change:starred', function() {
-                this.storeData('starred', this.get('starred'))
+                this.storeData('starred', this.get('starred'));
             }, this);
             
             this.on('change:loved', function() {
-                this.storeData('loved', this.get('loved'))
+                this.storeData('loved', this.get('loved'));
             }, this);
             
-            if (!this.get("title")) {
-                this.set({
-                    "title": this.defaults().title
-                });
+            /*
+            var sessionSpeakers = [];
+            var speakerCollection = this.model.collection.speakerCollection;
+            
+            // TODO: Do this in model?
+            for( var i = 0; i < modelData.speaker_ids.length; i++ ) {
+                var speakerId = modelData.speaker_ids[i];
+                sessionSpeakers.push( speakerCollection.get( speakerId ) );
             }
+            */
+
         }
     });
 

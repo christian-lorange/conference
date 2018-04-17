@@ -1,11 +1,15 @@
-AnyConference PhoneGap Day Edition
-==================================
+AnyConference
+=============
 
 A whitelabel conference application demonstrating PhoneGap and Topcoat usage.
 
 Usage
 -----
 
-Use PhoneGap Build to select this repo to build apps for multiple platforms (only iOS and Android currently targeted)
+This project uses the [PhoneGap CLI](https://github.com/mwbrooks/phonegap-cli)
+for development.
 
-![AnyConference QR Code](https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=http://build.phonegap.com/apps/477246/install/?qr_key=NEJrozHf8cshEMyZDGZ7&chld=L|1&choe=UTF-8)
+After installing the PhoneGap CLI Use:
+`phonegap local run android`
+or
+`phonegap local run ios` to view the project

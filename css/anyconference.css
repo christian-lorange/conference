@@ -13,95 +13,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-#content {
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-    background: #fff;
-}
-
-.all-details-wrap {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-}
-
-.item-details-wrap {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.anyconf-utils-right input[type="checkbox"]:checked + .topcoat-checkbox-label-star.topcoat-checkbox-label--right:after,
-.anyconf-utils-right input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-label--right:after {
-    margin-left: -1px;
-    background-size: 27px;
-    margin-top: 1px;
-}
-
-.fixed {
-    position: fixed
-}
-
-.top {
-    top: 0
-}
-
-.item-list,
-.item-page,
-.item-details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ddd;
-}
-.anyconf-list__item .anyconf-list-label {
-  padding: 0;
-}
-.topcoat-icon--arrow {
-  height: 3.3rem;
-  width: 50px;
-  border-right: 1px solid #fff;
-  vertical-align: top;
-  background-image: url("../img/arrowdown.svg");
-  background-position: center;
-}
-.topcoat-icon--blank {
-  height: 3.3rem;
-  width: 50px;
-  border-right: 1px solid transparent;
-  vertical-align: top;
-}
-.topcoat-icon--left-arrow {
-    background-size: 40px;
-    background-image: url("../img/arrowleft.svg");
-    background-position: 50% 50%;
-}
-.topcoat-icon--star {
-  height: 3.3rem;
-  width: 50px;
-  vertical-align: top;
-  background-size: 40px;
-  background-image: url("../img/staroff.svg");
-  background-position: center;
-}
-.topcoat-icon--heart {
-  height: 3.3rem;
-  width: 50px;
-  vertical-align: top;
-  background-size: 40px;
-  background-image: url("../img/heartoff.svg");
-  background-position: center;
-}
 
 body {
   margin: 0;
@@ -114,15 +25,18 @@ body {
   /* text-rendering: optimizeLegibility; */
 }
 
-
-.topcoat-icon--menu-stack {
-  background: url("../img/hamburger_dark.svg") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+.fixed {
+    position: fixed
 }
-
-
+.top {
+    top: 0
+}
+.fifth {
+  width: 20%;
+}
+.three-fifths {
+  width: 60%;
+}
 .quarter {
   width: 25%;
 }
@@ -141,8 +55,6 @@ body {
 .full {
   width: 100%;
 }
-
-
 .left {
   text-align: left;
 }
@@ -152,8 +64,6 @@ body {
 .right {
   text-align: right;
 }
-
-
 .reset-ui {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -181,59 +91,51 @@ body {
   overflow: hidden;
 }
 
+.anyconf-app-content {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
 
-.js-page-overlay,
-.js-menu-overlay {
+.all-details-wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.item-list,
+.item-page,
+.item-details {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
-  -webkit-transform: translateZ(0);
-  -webkit-transition: opacity 0.2s;
-  background: rgba(0,0,0,0.5);
+  background: #ddd;
 }
 
-.js-menu-overlay {
-    z-index: 25;
+.item-page {
+    background: #f2f3f3;
+    z-index: 1;
 }
 
-.js-details-transition {
-  -webkit-transition: all 0.3s;
+.item-details-wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #f2f3f3;
 }
 
-.js-overlay-transition-out {
-  -webkit-transition: opacity 0.5s;
-  opacity: 0;
-}
-
-.js-page-overlay-removed {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-}
-.js-page-transition-in {
-  -webkit-transition: all 0.2s;
-  -webkit-transform: none;
-}
-.js-page-transition-out {
-  -webkit-transition: all 0.2s;
-  -webkit-transform: translateY(-100%) translateZ(0);
-}
-.js-menu-transition-in {
-    -webkit-transition: all 0.2s;
-    -webkit-transform: none;
-}
-.js-menu-transition-out {
-    -webkit-transition: all 0.2s;
-}
-
-.js-menu-overlay-hidden {
-    opacity: 0;
-}
-
-.js-menu-overlay-shown {
-    opacity: 1;
+.anyconf-list__item .anyconf-list-label {
+  padding: 0;
 }
 
 .anyconf-label-status--next {
@@ -248,7 +150,7 @@ body {
   content: "UP NEXT";
   line-height: 2rem;
   font-size: 2rem;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   font-weight: 100;
   padding: 0.07rem 0.7rem;
   color: #fff;
@@ -260,7 +162,7 @@ body {
   border-radius: 6px;
 }
 .topcoat-navigation-bar__title {
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   text-transform: uppercase;
   text-shadow: 0px 1px 0px #fff;
 }
@@ -296,14 +198,24 @@ body {
 .topcoat-overlay {
   position: fixed;
   top: 30%;
+  left: -100px;
   width: auto;
   height: auto;
-  margin-left: 30%;
+  margin-left: 50%;
   margin-right: 30%;
   padding: 10px;
   text-align: center;
   background-color: rgba(51,51,51,0.9);
+  border-radius: 5px;
 }
+.topcoat-overlay h1 {
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 
 /*
  Button
@@ -543,23 +455,6 @@ body {
   pointer-events: none;
 }
 
-
-/*
-Copyright 2012 Adobe Systems Inc.;
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
-
 /*
  Icon Button
  -----------
@@ -772,28 +667,55 @@ limitations under the License.
   height: 1.5rem;
   vertical-align: middle;
 }
+.topcoat-icon--blank {
+  height: 3.3rem;
+  width: 50px;
+  border-right: 1px solid transparent;
+  vertical-align: top;
+}
+.topcoat-icon--arrow {
+  height: 3.3rem;
+  width: 50px;
+  vertical-align: top;
+  background-image: url("../img/arrowdown.svg");
+  background-position: center;
+}
+.topcoat-icon--left-arrow {
+    background-size: 40px;
+    background-image: url("../img/arrowleft.svg");
+    background-position: 50% 50%;
+}
+.topcoat-icon--right-arrow {
+    background-size: 40px;
+    background-image: url("../img/arrowright.svg");
+    background-position: 50% 50%;
+}
+.topcoat-icon--menu-stack {
+  background: url("../img/hamburger_dark.svg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .topcoat-icon--large {
   width: 2.5rem;
   height: 2.5rem;
 }
-
-
-/*
-Copyright 2012 Adobe Systems Inc.;
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
-
+.topcoat-icon--star {
+  height: 3.3rem;
+  width: 50px;
+  vertical-align: top;
+  background-size: 40px;
+  background-image: url("../img/staroff.svg");
+  background-position: center;
+}
+.topcoat-icon--heart {
+  height: 3.3rem;
+  width: 50px;
+  vertical-align: top;
+  background-size: 40px;
+  background-image: url("../img/heartoff.svg");
+  background-position: center;
+}
 /*
  List
  ------------
@@ -814,7 +736,15 @@ limitations under the License.
     </div>
 
 */
+.topcoat-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-top: none;
+  color: #454545;
+}
 .topcoat-list__container {
+  z-index: 5;
   padding: 0;
   margin: 0;
   font: inherit;
@@ -826,11 +756,11 @@ limitations under the License.
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow: auto;
   -webkit-overflow-scrolling: touch;
   border-top: none;
   border-bottom: 1px solid #eff1f1;
   background-color: #f2f3f3;
+  overflow: hidden;
 }
 .topcoat-list__header {
   margin: 0;
@@ -843,13 +773,6 @@ limitations under the License.
   border-top: solid 1px rgba(255,255,255,0.5);
   border-bottom: solid 1px rgba(255,255,255,0.23);
 }
-.topcoat-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  border-top: none;
-  color: #454545;
-}
 .topcoat-list__item,
 .topcoat-list__item--first {
   margin: 0;
@@ -861,23 +784,6 @@ limitations under the License.
 .topcoat-list__item--first {
   border-top: var-border-top--list-item--first;
 }
-
-
-/*
-Copyright 2012 Adobe Systems Inc.;
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
 
 /*
 Navigation Bar
@@ -910,7 +816,6 @@ Navigation Bar
   margin: 0;
   font: inherit;
   color: inherit;
-  background: transparent;
   border: none;
   cursor: default;
   -webkit-user-select: none;
@@ -920,10 +825,12 @@ Navigation Bar
   height: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background: #fff;
+  background-color: #dfe2e2;
   color: #333;
+  border-bottom: 1px solid #b4b4b4;
   -webkit-box-shadow: inset 0 -1 #b9bcbc, 0 1px rgba(0,0,0,0.95);
   box-shadow: inset 0 -1 #b9bcbc, 0 1px rgba(0,0,0,0.95);
+  z-index: 10;
 }
 .topcoat-navigation-bar__item {
   -webkit-box-sizing: border-box;
@@ -962,135 +869,11 @@ Navigation Bar
 }
 
 
-/*
-Copyright 2012 Adobe Systems Inc.;
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
-
-/*
- Search Input
- ------------
-
- :disabled - Disabled state
-
- .is-disabled - Simulates a disabled state
-
-    <input type="search" value="" placeholder="search" class="topcoat-search-input">
-    <input type="search is-disabled" value="" placeholder="search" class="topcoat-search-input">
-
- */
-.topcoat-search-input,
-.topcoat-search-input--large {
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 1.25rem;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  margin: 5px;
-  height: 3rem;
-  font: inherit;
-  font-weight: 200;
-  outline: none;
-  border: 1px solid #a5a8a8;
-  background-color: #fff;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  color: #454545;
-  -webkit-appearance: none;
-  padding: 0 0 0 2.7em;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  background-image: url("../img/search.svg");
-  background-position: 1em center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 16px;
-  -moz-background-size: 16px;
-  background-size: 16px;
-}
-.topcoat-search-input:focus,
-.topcoat-search-input--large:focus {
-  background-color: #fff;
-  color: var-color-focus;
-}
-.topcoat-search-input::-webkit-search-cancel-button,
-.topcoat-search-input::-webkit-search-decoration {
-  margin-right: 5px;
-}
-.topcoat-search-input:focus::-webkit-input-placeholder,
-.topcoat-search-input:focus::-webkit-input-placeholder {
-  color: #c6c8c8;
-}
-.topcoat-search-input:disabled,
-.topcoat-search-input.is-disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-/*
- Large Search Input
- ------------------
-
- :disabled - Disabled state
-
- .is-disabled - Simulates a disabled state
-
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large">
-    <input type="search"  value="" placeholder="search" class="topcoat-search-input--large .is-disabled">
-
-*/
-.topcoat-search-input--large {
-  height: 4rem;
-  font-size: 2.5rem;
-  font-weight: 200;
-  padding-left: 2.8em;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
-  background-position: 1.2em center;
-  -webkit-background-size: 2.5rem;
-  -moz-background-size: 2.5rem;
-  background-size: 2.5rem;
-}
-.topcoat-search-input--large:disabled,
-.topcoat-search-input--large.is-disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-
-
-/*
-Copyright 2012 Adobe Systems Inc.;
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
 .topcoat-view {
   border-radius: 6px;
 }
 .topcoat-navigation-bar__title {
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   text-transform: uppercase;
   text-shadow: 0px 1px 0px #fff;
   
@@ -1119,7 +902,7 @@ limitations under the License.
   content: "UP NEXT";
   line-height: 2rem;
   font-size: 2rem;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   font-weight: 100;
   padding: 0.07rem 0.7rem;
   color: #fff;
@@ -1138,7 +921,7 @@ limitations under the License.
   content: "NOW";
   line-height: 2rem;
   font-size: 2rem;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   font-weight: 100;
   padding: 0.07rem 0.7rem;
   color: #fff;
@@ -1170,7 +953,7 @@ limitations under the License.
   min-height: 8rem;
   padding: 1rem;
   background: #fff;
-  border: 1px solid #8497a4;
+  border: 1px solid #e2b6cc;
 }
 .topcoat-card:after {
   display: block;
@@ -1182,7 +965,7 @@ limitations under the License.
   content: '';
   width: 98%;
   height: 10px;
-  border-top: 1px solid #71818c;
+  border-top: 1px solid #c69;
 }
 .topcoat-card-content {
   display: table-cell;
@@ -1300,10 +1083,10 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   margin: 0;
   padding: 0;
   color: #fff;
-  background: #209dc2;
+  background: #c69;
   font-weight: normal;
   font-size: 2.5rem;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   text-transform: uppercase;
   list-style: none;
 }
@@ -1314,7 +1097,7 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   padding: 0;
   font-size: 1rem;
   font-weight: 400;
-  background: #9dd4e4;
+  background: #e9bcd2;
   border-top: none;
 }
 .anyconf-list-label {
@@ -1323,16 +1106,8 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   height: 3.3rem;
   line-height: 3.3rem;
 }
-.anyconf-list__item .anyconf-list-label {
-  padding: 0;
-}
-.topcoat-icon--arrow {
-  height: 3.3rem;
-  width: 50px;
-  border-right: 1px solid #fff;
-  vertical-align: top;
-  background-image: url("../img/arrowdown.svg");
-  background-position: center;
+.anyconf-list-label--with-icon {
+  border-left: 1px solid white;
 }
 .topcoat-icon--blank {
   height: 3.3rem;
@@ -1340,25 +1115,9 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   border-right: 1px solid transparent;
   vertical-align: top;
 }
-.topcoat-icon--star {
-  height: 3.3rem;
-  width: 50px;
-  vertical-align: top;
-  background-size: 40px;
-  background-image: url("../img/staroff.svg");
-  background-position: center;
-}
-.topcoat-icon--heart {
-  height: 3.3rem;
-  width: 50px;
-  vertical-align: top;
-  background-size: 40px;
-  background-image: url("../img/heartoff.svg");
-  background-position: center;
-}
 .anyconf-label-date {
   margin: 0;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   text-align: center;
   font-weight: normal;
   font-size: 2rem;
@@ -1366,7 +1125,7 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
 }
 .anyconf-label-location {
   margin: 0;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   text-align: center;
   font-weight: normal;
   font-size: 1.5rem;
@@ -1381,7 +1140,7 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
 }
 .anyconf-underline {
   width: 140px;
-  background: #71818c;
+  background: #c69;
   border: none;
   margin: 0 auto;
   height: 3px;
@@ -1397,7 +1156,7 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   margin: 0;
   line-height: 3.5rem;
   font-size: 3.5rem;
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -1417,7 +1176,7 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   background-color: #f2f3f3;
 }
 .anyconf-view--bordered {
-  border: 1px solid #71818c;
+  border: 1px solid #f9e699;
   border-bottom: none;
   background: #fff;
   padding: 1em;
@@ -1426,15 +1185,21 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   line-height: 1.7;
 }
 .anyconf-view--bordered-last {
-  border-bottom: 1px solid #71818c;
+  border-bottom: 1px solid #f9e699;
 }
 .anyconf-utils-right {
   position: absolute;
   right: 10px;
   top: 0px;
 }
+.anyconf-utils-right input[type="checkbox"]:checked + .topcoat-checkbox-label-star.topcoat-checkbox-label--right:after,
+.anyconf-utils-right input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-label--right:after {
+    margin-left: -1px;
+    background-size: 27px;
+    margin-top: 1px;
+}
 .anyconf-condensed {
-  font-family: Helvetica;
+  font-family: 'league-gothic', 'SourceSansPro';
   text-transform: uppercase;
   font-size: 1.5rem;
   color: #333;
@@ -1450,7 +1215,7 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   margin-top: 0.5rem;
 }
 .anyconf-link {
-  color: #209dc2;
+  color: #c69;
 }
 .anyconf-link--twitter:before {
   display: inline-block;
@@ -1478,6 +1243,9 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   background-position: center;
   background-image: url("../img/link.svg");
 }
+.anyconf-list-link {
+    width: 100%;
+}
 .topcoat-icon.topcoat-checkbox-label {
   vertical-align: middle;
 }
@@ -1496,73 +1264,6 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   background: none;
 }
 
-/*
- Text Input
- ----------
-
-:disabled - Disabled state
-.is-disabled - Simulates a disabled state on mobile devices
-
-    <input type="text" class="topcoat-text-input" value="" placeholder="text">
-    <input type="text" class="topcoat-text-input is-disabled" value="" placeholder="text">
-
-*/
-.topcoat-text-input,
-.topcoat-text-input--large {
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 1.25rem;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  margin: 5px;
-  height: 3rem;
-  font: inherit;
-  font-weight: 200;
-  outline: none;
-  border: 1px solid #a5a8a8;
-  background-color: #fff;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  color: #454545;
-}
-.topcoat-text-input:focus {
-  background-color: #fff;
-  color: #000;
-}
-.topcoat-text-input:disabled,
-.topcoat-text-input.is-disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-/*
- Large Text Input
- ----------------
-
-:disabled - Disabled state
-.is-disabled - Simulates a disabled state on mobile devices
-
-    <input type="text" class="topcoat-text-input--large" value="" placeholder="text">
-    <input type="text" class="topcoat-text-input--large is-disabled" value="" placeholder="text">
-*/
-.topcoat-text-input--large {
-  height: 4rem;
-  font-size: 2.5rem;
-}
-.topcoat-text-input--large:focus {
-  background-color: #fff;
-  color: #000;
-}
-.topcoat-text-input--large.is-disabled,
-.topcoat-text-input--large:disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-
-
 
 /* added by adeveria */
 .reset-ui {
@@ -1570,25 +1271,52 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
-.topcoat-icon--star {
-    background-repeat: no-repeat;
-}
-
-.topcoat-navigation-bar {
-    background: #dfe2e2;
-    border-bottom: 1px solid #b4b4b4;
-}
-
 .anyconf-collection-container {
-    background-color: #f2f3f3;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    
+    background-color: #f2f3f3;
+}
+
+.topcoat-navigation-bar__day-container {
+    overflow: hidden;
 }
 
 .anyconf-list__header,
 .anyconf-list__item {
     width: 90%;
 }
+
+.anyconf-page-indicator {
+    text-align: center;
+    position: absolute;
+    line-height: 15px;
+    top: 47px;
+    left: 0;
+    width: 100%;
+}
+
+.anyconf-day-symbol {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 1px;
+}
+
+.anyconf-day-symbol--selected {
+    background-color: #c69;
+}
+
+.anyconf-day-list-collection {
+    height: 100%;
+    width: 100%;
+}
+
 
 .anyconf-list-label {
     padding: 0 0.5rem;
@@ -1600,6 +1328,10 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
 
 .anyconf-list__item .topcoat-icon--star {
     background-image: url("../img/starmenu.svg");
+}
+
+.anyconf-session-speakers {
+    margin-bottom: 10px;
 }
 
 .anyconf-session-speakers h5 {
@@ -1617,12 +1349,27 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
     font-size: 1rem;
 }
 
-.anyconf-label-speaker-heading {
+
+.anyconf-speaker-details .topcoat-navigation-bar__item {
     font-size: 1.2rem;
     vertical-align: middle;
     font-weight: bold;
     width: 100%;
 }
+
+.anyconf-speaker-details__img {
+    display: inline-block;
+}
+
+.anyconf-speaker-details__name {
+    display: inline-block; //table-cell;
+    vertical-align: middle;
+    width: 50%;
+    line-height: 1.4;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
 
 .anyconf-label-speaker-heading img {
     vertical-align: middle;
@@ -1649,26 +1396,12 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
     margin-left: 16px;
 }
 
-.topcoat-overlay {
-    width: auto;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 50%;
-    left: -100px;
-}
+
 
 .anyconf-session-title-link {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: normal;
-}
-
-.topcoat-overlay h1 {
-    width: 150px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    color: #fff;
 }
 
 .anyconf-overlay-love h1:before,
@@ -1705,10 +1438,6 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
   background-image: url("../img/hearton.svg");
 }
 
-.item-page {
-    background: #f2f3f3;
-}
-
 .all-details-wrap {
     position: absolute;
     width: 100%;
@@ -1716,30 +1445,13 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
     bottom: 0;
 }
 
-.anyconf-speaker-details-img {
-    display: inline-block;
-}
-
-.anyconf-speaker-details-name {
-    display: inline-block; //table-cell;
-    vertical-align: middle;
-    width: 50%;
-    line-height: 1.4;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
 .anyconf-scroll-content {
     min-height: 100%;
     box-sizing: border-box;
 }
 
-.anyconf-menu-title {
-    margin-top: 2rem;
-}
-
 .anyconf-menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 80%;
@@ -1747,25 +1459,46 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
     z-index: 30;
     background: #fff;
     overflow: auto;
+    -webkit-transform: translateZ(0px);
     -webkit-overflow-scrolling: touch;
 }
 
-.anyconf-event-logo {
-    position: absolute;
-    bottom: 2em;
-    width: 100%;
-    height: 180px;
-    margin: 0 auto;
+.anyconf-menu__container {
+    min-height: 100%;
+    padding-top: 1px;
+    margin-top: -1px;    
+    margin-bottom: -10px; /* Not sure why */
+}
 
+.anyconf-event-logo {
+    min-height: 150px;
+    max-height: 20%;
+    width: 60%;
+
+    margin: 100px auto 0;
+    
     background-image: url('../img/event-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 .topcoat-card {
     display: block;
     min-height: 100px;
+}
+
+.topcoat-titles-wrap {
+    //-webkit-transform: translateZ(0);
+    //overflow: hidden;
+    height: 4rem;
+}
+
+.topcoat-titles-wrap .topcoat-navigation-bar__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .topcoat-card-content {
@@ -1796,27 +1529,70 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
     background-color: #454545;
 }
 
-.item-details-wrap {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    overflow: auto;
-    background-color: #f2f3f3;
-    -webkit-overflow-scrolling: touch;
+/*
+  Interactivity classes
+*/
+.js-page-overlay,
+.js-menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 0.2s;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
 }
-
-.anyconf-utils-right input[type="checkbox"]:checked + .topcoat-checkbox-label-star.topcoat-checkbox-label--right:after,
-.anyconf-utils-right input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-label--right:after {
-    margin-left: -1px;
-    background-size: 27px;
-    margin-top: 1px;
+.js-menu-overlay {
+    z-index: 25;
+     -webkit-transition: opacity 0.5s;
 }
-
+.js-details-transition {
+  -webkit-transition: all 0.3s;
+}
+.js-page-overlay-transition {
+  -webkit-transition: all 0.3s;
+}
+.js-page-transition-in {
+  -webkit-transition: all 0.2s;
+  -webkit-transform: none;
+}
+.js-page-transition-out {
+  -webkit-transition: all 0.2s;
+  -webkit-transform: translateY(-100%) translateZ(0);
+}
+.js-menu-offscreen {
+  display: none;
+}
+.js-menu-transition-in {
+  -webkit-transition: all 0.4s;
+  -webkit-transform: none;
+}
+.js-menu-transition-out {
+  -webkit-transition: all 0.3s;
+}
+.js-menu-overlay-hidden {
+  opacity: 0;
+}
+.js-menu-overlay-shown {
+  opacity: 1;
+}
 .js-enter-view-transition,
 .js-leave-view-transition {
-    -webkit-transition: -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 }
+.js-submenu-opened {
+  -webkit-transform: rotateZ(-90deg); // translateZ(0);
+}
+.js-submenu-transition {
+  -webkit-transition: -webkit-transform 0.1s;
+}
+.js-submenu-child--hidden {
+    display: none;
+}
+
 
 /* Use smaller size for fallback font (no wf-active) */
 .topcoat-navigation-bar__title {
@@ -1843,3 +1619,4 @@ input[type="checkbox"]:checked + .topcoat-checkbox-label-heart.topcoat-checkbox-
 .wf-active .anyconf-label-status--next:after {
     font-size: 2rem;
 }
+

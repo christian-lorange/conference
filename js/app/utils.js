@@ -14,20 +14,22 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 define(function(require, exports, module) {
-
-    var SpeakerDetailsView = require('app/speakers/speakerDetailsView');
-    var CollectionDetailsView = require('app/components/collectionDetailsView');
-    var appRouter = require('app/appRouter');
     
-    var SpeakerCollectionDetailsView = CollectionDetailsView.extend({
-        DetailsView: SpeakerDetailsView,
-        routeId: 'speakerDetails',
-        handleRouteIn: function(speakerId) {
-            this.inView = true;
-            appRouter.setCurrentView(this);
-            this.navigateTo(speakerId);
+    var transformProperty;
+    ['', 'webkit', 'moz', 'ms', 'o'].every( function(prefix) {
+        var prop = prefix + (prefix ? 'Transform' : 'transform');
+        if( prop in document.body.style ) {
+            transformProperty = prop;
+            return false; 
         }
+        return true;
     });
     
-    return SpeakerCollectionDetailsView;
+    var setTransform = function(elem, transform) {
+        elem.style[transformProperty] = transform;
+    };
+    
+    return {
+        setTransform: setTransform
+    };
 });
