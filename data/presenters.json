@@ -1,0 +1,137 @@
+[{
+    "id": "sp1",
+    "first_name": "Michael",
+    "last_name": "Brooks",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development."
+}, {
+    "id": "sp2",
+    "first_name": "Ray",
+    "last_name": "Camden",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Ray Camden is a 40 year old married father of three living in beautiful Lafayette, Louisiana. He is a developer evangelist for Adobe. His primary technical focus is on web standards and mobile development."
+}, {
+    "id": "sp3",
+    "first_name": "CJ",
+    "last_name": "Gammon",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "CJ Gammon is a Creative Developer at Adobe, working with cutting edge web tech to showcase and push the creative potential of the web platform."
+}, {
+    "id": "sp4",
+    "first_name": "Lyza Danger",
+    "last_name": "Gardner",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Lyza Danger Gardner is a dev. Since co-founding Portland, Ore.-based mobile web start-up Cloud Four in 2007, Lyza has tortured and thrilled herself with the intricate ins and outs of the bazillion devices and browsers now accessing the web globally. Lyza and co-founder Jason Grigsby are the authors of Head First Mobile Web (O’Reilly)."
+}, {
+    "id": "sp5",
+    "first_name": "Jeff",
+    "last_name": "Griffiths",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Jeff is here representing one of our great sponsors, Mozilla."
+}, {
+    "id": "sp6",
+    "first_name": "Chris",
+    "last_name": "Hughes",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Chris is a freethinking nerd who believes his own bullshit. BS aside, he wants to make the world better. He codes for fun and profit. The iPhone is his bitch. He loves puppies."
+}, {
+    "id": "sp7",
+    "first_name": "Kristofer",
+    "last_name": "Joseph",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Kristofer is a nerd of all trades. He is obsessed with anything that helps creative people realize their visions and currently does so for Adobe’s Web platform team. His most recent contributions include Reflow and Topcoat."
+}, {
+    "id": "sp8",
+    "first_name": "Brian",
+    "last_name": "LeRoux",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Brian declined to write a bio because talking in the third person weirds me out man."
+}, {
+    "id": "sp9",
+    "first_name": "Simon",
+    "last_name": "MacDonald",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Simon MacDonald is an Advisory Software Engineer in IBM’s Emerging Internet Technologies Group. Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days."
+}, {
+    "id": "sp10",
+    "first_name": "Joe",
+    "last_name": "McCann",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "TJoe McCann is the Director of Creative Technology at Mother, an award-winning creative agency in New York City. Joe is also a Managing Director and Partner at The Node Firm, a global collective of Node.js experts. Prior to joining Mother, Joe was the Mobile and Platform Architect for all of Product at Bazaarvoice (Nasdaq:BV), an Austin, Texas-based SaaS company enabling authentic conversations between brands and consumers through various channels, clocking in over 30 billion impressions/month. Joe has run his own digital consultancy serving Fortune 500 companies in areas such as technical architecture to mobile application development and design. Joe is also a frog design alumnus."
+}, {
+    "id": "sp11",
+    "first_name": "Joe",
+    "last_name": "Marini",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Joe is here representing one of our great sponsors, Google."
+}, {
+    "id": "sp12",
+    "first_name": "Michal",
+    "last_name": "Mocny",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "I work for the Chrome team at Google, in Waterloo, Canada. For the past year, I’ve been having a blast contributing to Cordova and building tools to help port Chrome Packaged Apps to iOS/Android. Prior to that I worked on Chrome Graphics/Compositor and Gpu Memory Management, focusing on the Chromebook Pixel!."
+}, {
+    "id": "sp13",
+    "first_name": "Bill",
+    "last_name": "Pearson",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Bill is here representing one of our great sponsors, Intel."
+}, {
+    "id": "sp14",
+    "first_name": "Andrew",
+    "last_name": "Trice",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Andrew Trice is a Technical Creative Cloud Evangelist with Adobe. Andrew brings to the table more than a decade of experience designing, implementing, and delivering rich experiences for the web, desktop, and mobile devices."
+}, {
+    "id": "sp15",
+    "first_name": "Ken",
+    "last_name": "Wallis",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Ken is here representing one of our great sponsors, BlackBerry."
+}, {
+    "id": "sp16",
+    "first_name": "Tommy Carlos",
+    "last_name": "Williams",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Tommy-Carlos Williams is a mobile developer from Melbourne, Australia. Probably best known in PhoneGap circles as “devgeeks” on IRC where he can be found railing against jQuery Mobile and helping devs with their apps. He is lead developer for SpiderOak’s mobile team working on their cross-platform open source apps. A committer to the Apache Cordova project, he enjoys talking in the third person, vegan food, beer, attempts at humour, and trying to sound humble through self-deprecation."
+}, {
+    "id": "sp17",
+    "first_name": "Jean-Christophe",
+    "last_name": "Cimetiere",
+    "company": "",
+    "title": "",
+    "profile_url": "https://attendease.com/assets/user-placeholder-80x80.png",
+    "bio": "Jean-Christophe is here representing one of our great sponsors, Microsoft."
+}]

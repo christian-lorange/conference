@@ -1,0 +1,408 @@
+[{
+    "public": true,
+    "id": "519e69d9ecdcc48b64000003",
+    "name": "Breakfast & Registration",
+    "code": null,
+    "description": "Say hello & get your badge",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": [],
+    "attachments": [],
+    "instances": [{
+        "id": "519e6ad3ecdcc48b64000007",
+        "room_id": "519e6a13ecdcc48b64000004",
+        "duration": 30,
+        "date": "2013-07-19",
+        "time": "09:00",
+        "capacity": 139,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e6af3ecdcc48b64000008",
+    "name": "Opening Remarks",
+    "code": null,
+    "description": "An intro to the day from Clint Hall.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": [],
+    "attachments": [],
+    "instances": [{
+        "id": "519e6bdcecdcc48b6400000c",
+        "room_id": "519e77e0ecdcc473cd000008",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "09:30",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e6beaecdcc4368b000001",
+    "name": "Mobile is Not a Thing. It is Everything.",
+    "code": null,
+    "description": "The explosive growth in all things mobile is unprecedented on many levels, from hardware to services and even the reshaping of the geopolitical landscape, the power of smartphones and tablets coupled with improving data networks has been anything short of phenomenal.  As designers and developers, it's important for us to get an understanding of what impacts mobile is in fact having on the world, in conventional and unconventional ways, and how we can not only comprehend, but prepare for what's next in this rapidly evolving space.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp10"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e6c04ecdcc4368b000002",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "09:55",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e76abecdcc473cd000001",
+    "name": "10 Devtools Tricks in 10 Minutes",
+    "code": null,
+    "description": "The Firefox devtools team moves fast, piling in huge chunks of fresh features and tools with each release. In this talk I'll quickly catch you up on what you might have missed if you haven't checked out the Firefox devtools for a while.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp5"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e76dcecdcc473cd000002",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 15,
+        "date": "2013-07-19",
+        "time": "10:20",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e7706ecdcc473cd000003",
+    "name": "BlackBerry Loves the Web",
+    "code": null,
+    "description": "We will provide an overview of the BlackBerry 10 OS and the strides it has made in web support including a browser (built completely in web technologies) offering one of the best mobile HTML5-compliant platforms. We will also look at our investment in the Apache Cordova/PhoneGap community, both in contributions as well as usage in our packaged apps platform. Targeting your PhoneGap application to the BlackBerry 10 platform  couldn't be easier, and after this session you will have all the motivation required to open up your application to another vibrant mobile ecosystem.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp15"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e7722ecdcc473cd000004",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 10,
+        "date": "2013-06-28",
+        "time": "10:35",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e77d1ecdcc473cd000007",
+    "name": "Break",
+    "code": null,
+    "description": "Grab a coffee and a snack and chat with friends new and old",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": [],
+    "attachments": [],
+    "instances": [{
+        "id": "519e781becdcc473cd000009",
+        "room_id": "519e77e0ecdcc473cd000008",
+        "duration": 20,
+        "date": "2013-07-19",
+        "time": "10:45",
+        "capacity": 800,
+        "attendance": 0
+    }, {
+        "id": "519e8771ecdcc4e4f400000d",
+        "room_id": "519e77e0ecdcc473cd000008",
+        "duration": 20,
+        "date": "2013-07-19",
+        "time": "15:05",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e85b4ecdcc4e4f4000001",
+    "name": "PhoneGap Command-Line",
+    "code": null,
+    "description": "In five minutes, we're going to install PhoneGap and create our first app. Before PhoneGap 3.0, this would have been an insurmountable challenge for all but the most epic, rock-star, ninja developers. Now, it can be done with three commands. With a remaining time, we will install the app to a device and programmatically install and remove plugins.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp1"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e85d5ecdcc4e4f4000002",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 20,
+        "date": "2013-07-19",
+        "time": "11:05",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8603ecdcc4e4f4000003",
+    "name": "Intel & HTML5",
+    "code": null,
+    "description": "Bill Pearson, Manager, Developer Experience & Strategy, from Intel explains how Intel is contributing to the mobile web through contributions to Apache Cordova and with Intel's handy tools. Learn what Intel is doing and where to get more information.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp13"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8623ecdcc4e4f4000004",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 15,
+        "date": "2013-07-19",
+        "time": "11:25",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "ss1",
+    "name": "Using Parse to Save Your Stuff",
+    "code": null,
+    "description": "PhoneGap and Web Standards are a great mix, but when you need to store data outside the device you have to rely on a server. Who the heck wants to worry about a server? You can use Parse to handle all the pesky data-storage for you.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp2"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e86c5ecdcc4e4f4000008",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "11:40",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e866fecdcc4e4f4000007",
+    "name": "Topcoat ♥s PhoneGap",
+    "code": null,
+    "description": "Creating PhoneGap application UI can be a challenge. Topcoat hopes to help you focus more on making your application instead of your UI by supplying you with fast performing css and example patterns for creating solid applications with web standards.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp7"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e86c5ecdcc4e4f4000008",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 20,
+        "date": "2013-07-19",
+        "time": "12:05",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8636ecdcc4e4f4000005",
+    "name": "Lunch",
+    "code": null,
+    "description": "It is going to be delicious!",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": [],
+    "attachments": [],
+    "instances": [{
+        "id": "519e865fecdcc4e4f4000006",
+        "room_id": "519e6a13ecdcc48b64000004",
+        "duration": 60,
+        "date": "2013-07-19",
+        "time": "12:25",
+        "capacity": 139,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e86d7ecdcc4e4f4000009",
+    "name": "SpiderOak",
+    "code": null,
+    "description": "SpiderOak's mobile clients have previously been a bit of an after thought. However, in 2013 SpiderOak is completely redesigning it's mobile clients and moving to PhoneGap and HTML5. Moreover, they will be being developed as an open source project under an Apache license. SpiderOak's first priority was creating an HTML5/PhoneGap app with performance worthy of a native client, while still looking 'at home' on it's main platforms. This involved challenging some assumptions, HTML5 UI performance myths, and just a sprinkling of pixie dust.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp16"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8705ecdcc4e4f400000a",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "13:25",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8725ecdcc4e4f400000b",
+    "name": "Speech Recognition",
+    "code": null,
+    "description": "Learn how you can add speech recognition capabilities to your PhoneGap application by leveraging the Web Speech API plugin. Simon will give a quick overview of the API and show how to make a quick question/answer app using Speech Rec.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp9"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8749ecdcc4e4f400000c",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "13:50",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8781ecdcc4e4f400000e",
+    "name": "Chrome Packaged Apps",
+    "code": null,
+    "description": "Join Joe Marini, Developer Advocate, for an overview of Chrome Packaged apps.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp11"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e881cecdcc4e4f400000f",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 15,
+        "date": "2013-07-19",
+        "time": "14:15",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e887becdcc4e4f4000010",
+    "name": "Porting Chrome Packaged Apps to Mobile Using Cordova",
+    "code": null,
+    "description": "Packaged web apps are an attempt to 'deliver an experience as capable as a native app, but as safe as a web page'.  This dream is being realized across desktop platforms with chrome, but what about mobile? Google thinks the answer lies with Cordova, and we've been working this past year to help make that a reality. In this talk, I will show you how to (a) get started with mobile chrome apps without breaking a sweat, and (b) take advantage of some of the cool stuff we've built in plain old vanilla cordova.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp12"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e88a8ecdcc4e4f4000012",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "14:30",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e88caecdcc4e4f4000013",
+    "name": "Windows Phone Porting Winners",
+    "code": null,
+    "description": "Join Jean-Christophe Cimetiere from the Windows Phone team at Microsoft as he announces the winners from the Windows Phone Porting App Challenge.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp17"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e89f6ecdcc4944d000013",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 10,
+        "date": "2013-07-19",
+        "time": "14:55",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8a1becdcc4944d000014",
+    "name": "PhoneGap & Hardware",
+    "code": null,
+    "description": "If someone told you that PhoneGap apps are limited because they leverage HTML & JS, they are wrong.  The entire architecture is extensible, and you can make a PhoneGap application do basically anything. You can integrate with native code, which means you can integrate with hardware and peripherals. Andy’s talk will show that you can integrate hardware with realtime communication into your PhoneGap applications. This talk will not only cover the basic approach for hardware interaction in PhoneGap applications, but also valuable lessons learned from real-world implementations.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp14"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8a57ecdcc4944d000017",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "15:25",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8b63ecdcc4944d00001b",
+    "name": "Hybrid Games",
+    "code": null,
+    "description": "See Chris talk about games!",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp6"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8b81ecdcc4944d00001c",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "15:50",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8b9decdcc4944d00001d",
+    "name": "PhoneGap Self-Defense for Web Devs",
+    "code": null,
+    "description": "Develop in browser, build for device, done. Right? Well, sort of. Making that jump from chromed browser to native metaphor can present some head-scratchers for 'traditional' web developers. If you want to reach for that lovely goal of unified, standards-driven codebase, let's map out some minefields and prep some battle tactics. Threats include: the fallacy of statelessess, build gremlins, fear of the client, waylaid standards and the trenchfoot we all get from debug.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp4"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8bc3ecdcc4944d00001e",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "16:15",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8bd6ecdcc4944d00001f",
+    "name": "Future Capabilities of the Web",
+    "code": null,
+    "description": "From layout to graphics, new capabilities are making their way to the web platform. We will explore new and coming features that will be particularly interesting when creating mobile web applications.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp3"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8bfeecdcc4944d000020",
+        "room_id": "519e6b65ecdcc48b64000009",
+        "duration": 25,
+        "date": "2013-07-19",
+        "time": "16:40",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}, {
+    "public": true,
+    "id": "519e8c14ecdcc4944d000021",
+    "name": "Closing Remarks + Audience Q&A ",
+    "code": null,
+    "description": "After a day of learning, hear Brian wrap it up and talk about the future.",
+    "filters": [],
+    "locked": false,
+    "speaker_ids": ["sp8"],
+    "attachments": [],
+    "instances": [{
+        "id": "519e8c67ecdcc4944d000023",
+        "room_id": "519e8c3aecdcc4944d000022",
+        "duration": 55,
+        "date": "2013-07-19",
+        "time": "17:05",
+        "capacity": 800,
+        "attendance": 0
+    }]
+}]

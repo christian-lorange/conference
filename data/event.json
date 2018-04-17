@@ -1,0 +1,15 @@
+{
+    "id": "phonegapdayus2013",
+    "api_id": "e17fab908d66d0e4c66b660152e58370",
+    "name": "PhoneGap Day US 2013",
+    "dates": [{
+        "id": "519e6ab4ecdcc48b64000006",
+        "date": "2013-07-19",
+        "start_time": "09:00",
+        "end_time": "18:00"
+    }],
+    "session_waitlists": false,
+    "minute_increments": 20,
+    "use_24_hour_clock": true,
+    "meta": {}
+}
