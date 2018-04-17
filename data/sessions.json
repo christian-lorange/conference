@@ -11,15 +11,9 @@
     "instances": [{
         "id": "519e6ad3ecdcc48b64000007",
         "room_id": "519e6a13ecdcc48b64000004",
-<<<<<<< HEAD
         "duration": 120,
         "date": "2023-06-27",
         "time": "20:00",
-=======
-        "duration": 30,
-        "date": "2013-07-20",
-        "time": "09:00",
->>>>>>> f7235030dd4798ca308e5575588a5fe2d5a00702
         "capacity": 139,
         "attendance": 0
     }]
