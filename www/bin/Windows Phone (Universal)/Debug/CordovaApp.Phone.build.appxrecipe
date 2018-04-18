@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SBRAND-SURFACE</Machine>
+    <WindowsUser>sbrand</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>a119ec80-7248-11e4-8590-a5e61359f06e</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\build\phone\bld\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\build\phone\debug\anycpu\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\img\campusdays2014.png">
+      <PackagePath>www\img\campusdays2014.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\angular-route.min.js">
+      <PackagePath>www\js\angular-route.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\angular.js">
+      <PackagePath>www\js\angular.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\angular.min.js">
+      <PackagePath>www\js\angular.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\app.js">
+      <PackagePath>www\js\app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\bootstrap.js">
+      <PackagePath>www\js\bootstrap.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\bootstrap.min.js">
+      <PackagePath>www\js\bootstrap.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\jquery-1.11.1.min.js">
+      <PackagePath>www\js\jquery-1.11.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\npm.js">
+      <PackagePath>www\js\npm.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\scripts\index.js">
+      <PackagePath>www\scripts\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\bootstrap-theme.css">
+      <PackagePath>www\css\bootstrap-theme.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\bootstrap-theme.min.css">
+      <PackagePath>www\css\bootstrap-theme.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\bootstrap.css">
+      <PackagePath>www\css\bootstrap.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\bootstrap.min.css">
+      <PackagePath>www\css\bootstrap.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\site.css">
+      <PackagePath>www\css\site.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\bootstrap-theme.css.map">
+      <PackagePath>www\css\bootstrap-theme.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\css\bootstrap.css.map">
+      <PackagePath>www\css\bootstrap.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\angular-route.min.js.map">
+      <PackagePath>www\js\angular-route.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\angular.min.js.map">
+      <PackagePath>www\js\angular.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\old.html">
+      <PackagePath>www\old.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\pages\home.html">
+      <PackagePath>www\pages\home.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\pages\practical.html">
+      <PackagePath>www\pages\practical.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\pages\session.html">
+      <PackagePath>www\pages\session.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\pages\sessions.html">
+      <PackagePath>www\pages\sessions.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\pages\tracks.html">
+      <PackagePath>www\pages\tracks.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\Project_Readme.html">
+      <PackagePath>www\Project_Readme.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\campusdays2014.json">
+      <PackagePath>www\js\campusdays2014.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\www\js\favorites.json">
+      <PackagePath>www\js\favorites.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sbrand\OneDrive\Projects\CampusDays2014\CampusDays2014\bld\Debug\platforms\windows\build\phone\debug\anycpu\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

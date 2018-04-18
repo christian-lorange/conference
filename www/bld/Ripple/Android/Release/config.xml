@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.sebastianbrandes.campusdays2014" version="1.1.0.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>Campus Days 2014</name>
+  <description>This is the unofficial app for Campus Days 2014.</description>
+  <author href="http://cordova.io" email="dev@cordova.apache.org">Sebastian</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="SplashScreen" value="screen" />
+  <preference name="windows-target-version" value="8.1" />
+  <preference name="windows-phone-target-version" value="8.1" />
+  <vs:platformSpecificValues />
+</widget>

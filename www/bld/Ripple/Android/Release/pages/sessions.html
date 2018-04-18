@@ -1,0 +1,18 @@
+<div class="page-header">
+    <h1>Sessions @ {{ prettyDay }}</h1>
+</div>
+
+<p ng-hide="hasSessions">There are no sessions for this track on this day.</p>
+
+<ul>
+    <li ng-repeat="session in sessions" style="margin-bottom: 20px;">
+        <p>
+            <strong ng-bind-html="session.TitleLink"></strong><br>
+            {{ session.DateTime }}<br>
+            <em>{{ session.Speakers }}</em> @ {{ session.Location }}
+        </p>
+        <p>
+            {{ session.Description }}
+        </p>
+    </li>
+</ul>
