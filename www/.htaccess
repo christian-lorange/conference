@@ -1,4 +1,0 @@
-AddType application/x-httpd-php5 .php
-AddType text/cache-manifest .manifest
-#ExpiresActive On
-#ExpiresByType text/cache-manifest now
