@@ -13,6 +13,8 @@
 <script src="js/jquery-1.4.2.min.js"></script>
    <script src="js/app.js"></script>
 
+   <script type="text/javascript" language="javascript" src="js/tablefilter.js"></script>  
+
 	
 
 
@@ -25,28 +27,170 @@
 </head>
 <body >
 
-	<TABLE ID="FIRST">
+	<TABLE ID="FIRST" class="FIRST">
+	<thead>
+                        <tr>
+                        	<th style="display:none;">ID</th>
+                            <th><select id='filterText' style='display:inline-block' onchange='filterText()'>
+										<option disabled selected>Day</option>
+										<option value='Friday'>Friday</option>
+										<option value='Saturday'>Saturday</option>
+										<option value='Sunday'>Sunday</option>
+										<option value='all'>All</option>
+									</select>
+							</th>
+                            <th>Time</th>
+                            <th>Band</th>
+                            <th>Learn More</th>
+                            <th></th>
+                        </tr>
+                    </thead>
 </TABLE>
     
 <hr />
 
-<TABLE ID="SECOND"> 
-<TR>
-<TD>1</TD>
+
+
+
+<TABLE ID="SECOND" > 
+	<thead>
+                        <tr>
+                        	<th style="display:none;">ID</th>
+                            <th><select id='filterText' style='display:inline-block' onchange='filterText()'>
+										<option disabled selected>Day</option>
+										<option value='Friday'>Friday</option>
+										<option value='Saturday'>Saturday</option>
+										<option value='Sunday'>Sunday</option>
+										<option value='all'>All</option>
+									</select>
+							</th>
+                            <th>Time</th>
+                            <th>Band</th>
+                            <th>Learn More</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+<TR class="content">
+<TD class="sortnr" style="display:none;">1</TD>
+<TD>Friday</TD>
 <TD>First Value</TD>
-<TD><A HREF="#">Add</A></TD>
+<TD>Extra First</TD>
+<TD><input type="button" value="LEARN MORE" onclick="openModal();currentSlide(1)" /></TD>
+<TD><A HREF="#">Add to My List</A></TD>
 </TR>
-<TR>
-<TD>2</TD>
+<TR class="content">
+<TD class="sortnr" style="display:none;">2</TD>
+<TD>Friday</TD>
 <TD>Second Value</TD>
-<TD><A HREF="#">Add</A></TD>
+<TD>Extra Second</TD>
+<TD><input type="button" value="LEARN MORE" onclick="openModal();currentSlide(2)" /></TD>
+<TD><A HREF="#">Add to My List</A></TD>
 </TR>
-<TR>
+<TR class="content">
+<TD class="sortnr" style="display:none;">3</TD>
+<TD>Saturday</TD>
 <TD>...</TD>
-<TD>...</TD>
-<TD><A HREF="#">Add</A></TD>
+<TD>Extra Third</TD>
+<TD><input type="button" value="LEARN MORE" onclick="openModal();currentSlide(3)" /></TD>
+<TD><A HREF="#">Add to My List</A></TD>
 </TR>
 </TABLE>
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+     <p>ONE</p>
+    </div>
+
+    <div class="mySlides">
+   <p>TWO</p>
+    </div>
+
+    <div class="mySlides">
+   <p>THREE</p>
+    </div>
+    
+
+
+
+    
+</div>
+
+<script>
+function filterText()
+	{  
+		var rex = new RegExp($('#filterText').val());
+		if(rex =="/all/"){clearFilter()}else{
+			$('.content').hide();
+			$('.content').filter(function() {
+			return rex.test($(this).text());
+			}).show();
+	}
+	}
+	
+function clearFilter()
+	{
+		$('.filterText').val('');
+		$('.content').show();
+	}
+
+
+function sortTable(){
+    var tbl = document.getElementById("FIRST").tBodies[0];
+    var store = [];
+    for(var i=0, len=tbl.rows.length; i<len; i++){
+        var row = tbl.rows[i];
+        var sortnr = parseFloat(row.cells[0].textContent || row.cells[0].innerText);
+        if(!isNaN(sortnr)) store.push([sortnr, row]);
+    }
+    store.sort(function(x,y){
+        return x[0] - y[0];
+    });
+    for(var i=0, len=store.length; i<len; i++){
+        tbl.appendChild(store[i][1]);
+    }
+    store = null;
+}
+
+
+
+</script>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 
 	
