@@ -30,7 +30,7 @@
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-network-information"  />
-    <plugin name="cordova-sqlite-storage" />
+    <plugin name="cordova-sqlite-evcore-extbuild-free" />
     <plugin name="cordova-plugin-camera"  />
     <plugin name="cordova-plugin-contacts" />
     <plugin name="cordova-plugin-media-capture"  />
