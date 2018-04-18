@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.orangehousellc.conferenceapp" 
-    version     =    "1.0.0"
-        xmlns       =    "http://www.w3.org/ns/widgets"
-        xmlns:gap   =    "http://phonegap.com/ns/1.0">
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.orangehouseconf.app"
+        version   = "1.0.0">
+
+
     <name>Ionic Conference</name>
     <description>An Ionic Framework application for the Ionic Conference.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -74,8 +76,8 @@
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="SplashScreenDelay" value="3000" />
-    <engine name="android" spec="^6.2.3" />
-    <engine name="ios" spec="^4.5.2" />
+    
+
     <plugin name="cordova-plugin-crosswalk-webview" spec="^2.3.0">
         <variable name="XWALK_VERSION" value="22+" />
         <variable name="XWALK_LITEVERSION" value="xwalk_core_library_canary:17+" />
