@@ -3,6 +3,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.orangehouseconf.app"
         version   = "1.0.0">
+  
+
     <name>PhoneGapDayApp</name>
     <description>
         Simple conference tracking app.
@@ -57,7 +59,7 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     
     <!--    Define a specific version of PhoneGap to build into your app. -->
-        <preference name="phonegap-version"       value="cli-8.0.0" />
+        <preference name="phonegap-version"      >
     
 
     <!-- Plugins -->
