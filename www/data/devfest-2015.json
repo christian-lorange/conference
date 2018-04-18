@@ -734,7 +734,7 @@
         "title": "Discovery"
       },
       "company": "",
-      "about": "ai un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, je les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. Impliquée dans la communauté agile nantaise, je participe également à l'organisation de l'Agile Tour de Nantes. Femme développeuse, je suis également co-fondatrice du groupe <a href='http://nantes-wit.fr/' target='_blank'>Women In Technology à Nantes</a>, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, je participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les <a href='http://www.devoxx4kids.org/france/evenements/devoxx4kids-nantes/' target='_blank'>Devoxx4Kids</a> ou les <a href='https://nantescodinggouters.wordpress.com/' target='_blank'>Coding Goûters à Nantes</a>.",
+      "about": "J'ai un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, je les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. Impliquée dans la communauté agile nantaise, je participe également à l'organisation de l'Agile Tour de Nantes. Femme développeuse, je suis également co-fondatrice du groupe <a href='http://nantes-wit.fr/' target='_blank'>Women In Technology à Nantes</a>, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, je participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les <a href='http://www.devoxx4kids.org/france/evenements/devoxx4kids-nantes/' target='_blank'>Devoxx4Kids</a> ou les <a href='https://nantescodinggouters.wordpress.com/' target='_blank'>Coding Goûters à Nantes</a>.",
       "socials": [
         {"class": "twitter", "link": "https://twitter.com/ceciliaBossard"},
         {"class": "link", "link": "https://javagile.wordpress.com/"}
@@ -761,13 +761,13 @@
     }
   ],
   "categories": {
-    "mobile": "Mobile et Objets Connectés"
-  , "web": "Web"
-  , "cloud": "Cloud et Big Data"
-  , "discovery": "Découverte"
-  , "codelab-web": "CodeLab Web"
-  , "codelab-cloud": "CodeLab Cloud"
-  , "formation": "Formation"
+    "mobile": "Mobile et Objets Connectés",
+    "web": "Web",
+    "cloud": "Cloud et Big Data",
+    "discovery": "Découverte",
+    "codelab-web": "CodeLab Web",
+    "codelab-cloud": "CodeLab Cloud",
+    "formation": "Formation"
   },
   "hours": {
     "h01": {
