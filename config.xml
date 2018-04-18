@@ -35,7 +35,7 @@
     <plugin name="cordova-plugin-contacts" />
     <plugin name="cordova-plugin-media-capture"  />
     <plugin name="cordova-plugin-file" />
-    <plugin name="com.hutchind.cordova.plugins.streamingmedia"  />
+
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-x-socialsharing" />
     <plugin name="cordova-plugin-actionsheet" />
