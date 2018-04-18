@@ -31,7 +31,7 @@
 	<thead>
                         <tr>
                         	<th style="display:none;">ID</th>
-                            <th><select id='filterText' style='display:inline-block' onchange='filterText()'>
+                            <th><select id='filterText1' style='display:inline-block' onchange='filterText1()'>
 										<option disabled selected>Day</option>
 										<option value='Friday'>Friday</option>
 										<option value='Saturday'>Saturday</option>
@@ -52,11 +52,11 @@
 
 
 
-<TABLE ID="SECOND" > 
+<TABLE ID="SECOND" class="SECOND"> 
 	<thead>
                         <tr>
                         	<th style="display:none;">ID</th>
-                            <th><select id='filterText' style='display:inline-block' onchange='filterText()'>
+                            <th><select id='filterText2' style='display:inline-block' onchange='filterText2()'>
 										<option disabled selected>Day</option>
 										<option value='Friday'>Friday</option>
 										<option value='Saturday'>Saturday</option>
@@ -120,12 +120,12 @@
 </div>
 
 <script>
-function filterText()
+function filterText1()
 	{  
-		var rex = new RegExp($('#filterText').val());
+		var rex = new RegExp($('#filterText1').val());
 		if(rex =="/all/"){clearFilter()}else{
-			$('.content').hide();
-			$('.content').filter(function() {
+			$('.FIRST .content').hide();
+			$('.FIRST .content').filter(function() {
 			return rex.test($(this).text());
 			}).show();
 	}
@@ -133,8 +133,8 @@ function filterText()
 	
 function clearFilter()
 	{
-		$('.filterText').val('');
-		$('.content').show();
+		$('.filterText1').val('');
+		$('.FIRST .content').show();
 	}
 
 
@@ -154,6 +154,42 @@ function sortTable(){
     }
     store = null;
 }
+
+function filterText2()
+	{  
+		var rex = new RegExp($('#filterText2').val());
+		if(rex =="/all/"){clearFilter()}else{
+			$('.SECOND .content').hide();
+			$('.SECOND .content').filter(function() {
+			return rex.test($(this).text());
+			}).show();
+	}
+	}
+	
+function clearFilter()
+	{
+		$('.filterText2').val('');
+		$('.SECOND .content').show();
+	}
+
+
+function sortTable(){
+    var tbl = document.getElementById("SECOND").tBodies[0];
+    var store = [];
+    for(var i=0, len=tbl.rows.length; i<len; i++){
+        var row = tbl.rows[i];
+        var sortnr = parseFloat(row.cells[0].textContent || row.cells[0].innerText);
+        if(!isNaN(sortnr)) store.push([sortnr, row]);
+    }
+    store.sort(function(x,y){
+        return x[0] - y[0];
+    });
+    for(var i=0, len=store.length; i<len; i++){
+        tbl.appendChild(store[i][1]);
+    }
+    store = null;
+}
+
 
 
 
