@@ -1,37 +1,36 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    
-    <title>CssConf</title>
-    <script src="http://use.edgefonts.net/league-gothic.js"></script>
-    <link rel="stylesheet" href="css/pull-to-action.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="css/anyconference.css" type="text/css" media="screen" charset="utf-8">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Conference Tracker</title>
 
-    <div id="main"></div>
-    
-    <!--<script src="cordova-2.7.0.js"></script>-->
-	<script>
-		document.addEventListener("deviceready", function() {
-			setTimeout(function() {
-				navigator.splashscreen.hide();
-				alert('hidden!');
-			}, 3000);	
-		}, false);
-	</script>
-    <script src="js/third-party/jquery-2.0.1.js"></script>
-    <script src="js/third-party/raf.polyfill.js"></script>
-    <script src="js/third-party/underscore.js"></script>
-    <script src="js/third-party/backbone.js"></script>
-    <script src="js/third-party/backbone.layoutmanager.js"></script>
-    <script src="js/third-party/Points.js"></script>
-    <script src="js/third-party/moment.min.js"></script>
-    <script src="js/third-party/iscroll.js"></script>
-    <script src="js/app/components/pull-to-action.js"></script>
-    <script data-main="js/app.js" src="js/third-party/require.js"></script>
-</body>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom fonts for this app -->
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+
+    <!-- ionic/angularjs js libs -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/angular/angular-resource.min.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="lib/openfb.js"></script> <!-- Facebook library -->
+    <!--<script src="lib/oauth.js"></script> &lt;!&ndash; Web OAuth for browser - phonegap version in plugin &ndash;&gt;-->
+    <script src="js/services.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/AppCtrl.js"></script>
+    <script src="js/FavoritesCtrl.js"></script>
+    <script src="js/SessionsCtrl.js"></script>
+    <script src="js/SessionCtrl.js"></script>
+    <script src="js/ProfileCtrl.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/FacebookService.js"></script>
+    <script src="js/TwitterService.js"></script>
+    <script src="js/LinkedInService.js"></script>
+  </head>
+
+  <body ng-app="conference">
+    <ion-nav-view></ion-nav-view>
+  </body>
 </html>
