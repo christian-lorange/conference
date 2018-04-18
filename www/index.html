@@ -1,212 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>phpConf</title>
-        <link rel="stylesheet" href="css/php.css" />
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-        <script src="js/phpconf.min.js"></script>
-    </head>
-    <body>
-        <div data-role="page" id="home" data-theme="a">
-            <div data-role="content">
-                <div class="logo"><img src="img/logo.jpg" alt="image"  /></div>
-                <ul data-role="listview" data-divider-theme="" data-inset="true">
-                    <li data-theme="">
-                        <a href="#noticias" data-transition="slide">
-                            Novidades
-                        </a>
-                    </li>
-                    <li data-theme="">
-                        <a href="#dia1" data-transition="slide">
-                            Agenda
-                        </a>
-                    </li>
-                    <li data-theme="">
-                        <a href="#mapa" data-transition="slide">
-                            Mapa
-                        </a>
-                    </li>
-                    <li data-theme="">
-                        <a href="#tweets" data-transition="slide">
-                            Comunidade
-                        </a>
-                    </li>
-                    <li data-theme="">
-                        <a href="#palestrantes" data-transition="slide">
-                            Palestrantes
-                        </a>
-                    </li>
-                </ul>
-            </div>
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PhoneGap Day</title>
+  <!--<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.gstatic.com/ https://*.googleapis.com/ http://localhost:* 'unsafe-inline' 'unsafe-eval'">-->
+  <meta http-equiv="Content-Security-Policy" content="default-src data: https://*.googleapis.com/ https://maps.gstatic.com/ https://codepush.azurewebsites.net/ * 'unsafe-inline' 'unsafe-eval'">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- ionic dynamically decides which stylesheet to load -->
+  <link ios-href="build/css/app.ios.css" rel="stylesheet">
+  <link md-href="build/css/app.md.css" rel="stylesheet">
+</head>
+<body>
 
-        <div data-role="page" id="noticias" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Notícias</h1>
-            </div>
-            <div data-role="content" class="ui-content" id="noticias-list">
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- <ion-app> is where the app's HTML loads -->
+  <ion-app></ion-app>
 
-        <div data-role="page" id="tweets" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Comunidade</h1>
-            </div>
-            <div data-role="content" id="tweets-list">
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- cordova.js required for cordova apps -->
+  <script src="cordova.js"></script>
 
-        <div data-role="page" id="dia1" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Agenda (dia 30/11)</h1>
-            </div>
-            <div data-role="content" data-theme="a" id="dia1-list">
-                <div data-role="navbar" data-theme="a" data-mini="false" class="ui-navbar day-selector">
-                    <ul>
-                        <li><a href="#dia1">Dia 30/11</a></li>
-                        <li><a href="#dia2">Dia 01/12</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- custom script -->
+  <script src="ace.js"></script>
 
-        <div data-role="page" id="dia2" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Agenda (dia 01/12)</h1>
-            </div>
-            <div data-role="content" data-theme="a" id="dia2-list">
-                <div data-role="navbar" data-theme="a" data-mini="false" class="ui-navbar day-selector">
-                    <ul>
-                        <li><a href="#dia1">Dia 30/11</a></li>
-                        <li><a href="#dia2">Dia 01/12</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- code push -->
+  <script src="codepush.js"></script>
 
-        <div data-role="page" id="palestrantes" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Palestrantes</h1>
-            </div>
-            <div data-role="content" data-theme="a" id="palestrantes-list">
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- the bundle which is built from the app's source code -->
+  <script src="build/js/app.bundle.js"></script>
 
-        <div data-role="page" id="palestra" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Palestra</h1>
-            </div>
-            <div data-role="content" data-theme="a" id="palestra-show">
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div data-role="page" id="mapa" data-theme="a">
-            <div data-role="header" data-position="inline">
-                <a href="#" data-direction="reverse" data-rel="back" data-theme="d">Voltar</a>
-                <h1>Mapa</h1>
-            </div>
-            <div data-role="content" data-theme="a" class="page-map">
-                <div id="map_canvas"></div>
-            </div>
-            <div data-role="footer" class="nav-footer" data-position="fixed" data-theme="e" data-id="myfooter">
-                <div data-role="navbar" class="nav-footer" data-grid="d">
-                    <ul>
-                        <li><a href="#home" id="fhome" data-icon="custom"></a></li>
-                        <li><a href="#dia1" id="fagenda" data-icon="custom"></a></li>
-                        <li><a href="#tweets" id="ftweets" data-icon="custom"></a></li>
-                        <li><a href="#mapa" id="fmapa" data-icon="custom"></a></li>
-                        <li><a href="#palestrantes" id="fpalestras" data-icon="custom"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="loader">
-            <span class="ui-icon ui-icon-loading"></span>
-        </div>
+  <!-- google maps script is loaded last as to not block rendering -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvhp5ELJ3lgUdwq7PQIcZssUiWID8vzQ4"></script>
+</body>
 </html>
