@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAAAC Summit: Info</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Titillium+Web:200,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <header class="header">
+            <div class="brand">
+                <figure>
+                    <a href="/">
+                        <img src="images/saaac-summit-logo.png" alt="SAAAC Summit">
+                    </a>
+                </figure>
+                <div>
+                    <h1 class="brand-name is-size-1">
+                        <span>SAAAC</span>Summit</h1>
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="nav-item">
+                                <a href="info.html#location">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="info.html#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="info.html#sponsors">Sponsors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://saaacfundraiser.ca" target="_blank">Donate</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section id="location" class="content location-content">
+
+            <div class="section-title has-text-weight-bold">
+                Locations
+            </div>
+
+            <div class="locations">
+                <div class="location-container">
+                    
+                    <div class="location location-conference" :class="{ 'expanded': viewHotels}">
+                        <div class="location-header">
+                            <h1 class="conference-brand title is-size-2">
+                                <span>CULTURE</span>
+                                <span>COUNTS</span>
+                                <span>CONFERENCE</span>
+                            </h1>
+                        </div>
+
+                        <div class="location-middle">
+                            <gmap-map class="map is-hidden-touch" 
+                                :center="{lat:43.7905387, lng:-79.2064952}" 
+                                :zoom="14" 
+                                map-type-id="terrain"
+                            >
+
+                                <gmap-marker :position="{lat:43.7905387, lng:-79.2064952}" :clickable="true" :draggable="true" @click="center=m.position"></gmap-marker>
+                                
+                            </gmap-map>
+
+                            <address>
+                                 937 Progress Ave, <br>
+                                 Scarborough, ON <br>
+                                 M1G 3T8
+                            </address>
+
+                            <p class="has-text-centered is-hidden-desktop">
+                                <a href="https://www.google.ca/maps/place/Centennial+College+Event+Centre/@43.7848628,-79.2322918,17z/data=!4m15!1m9!2m8!1sHotels!3m6!1sHotels!2s43.7848628,+-79.2301031!3s0x89d4d0f0fbf5c0c5:0xd99b08a6a1672181!4m2!1d-79.2301031!2d43.7848628!3m4!1s0x89d4d0f1af6ce0e9:0x9e53d52e1ec505f4!8m2!3d43.7846231!4d-79.2297453" target="_blank" class="button is-danger is-large">
+                                    <span class="icon"><i class="fa fa-map"></i></span>
+                                    <span>Map</span>
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- <button class="is-hidden-touch" @click="toggleHotels()">
+                            <span class="icon" v-if="!viewHotels">
+                                <i class="fa fa-h-square"></i>
+                            </span>
+                            <span class="icon" v-else>
+                                <i class="fa fa-times"></i>
+                            </span>
+                        </button> -->
+                    </div>
+                </div>
+
+                <div class="location-container">
+                    <div class="location location-musical">
+                        <div class="location-header">
+                            <h1 class="title is-size-2">
+                                <img src="/images/musical-section-logo.png">
+                            </h1>
+                        </div>
+
+                        <div class="location-middle">
+                            <gmap-map class="map is-hidden-touch" 
+                                :center="{lat:43.7945459, lng:-79.2362956}" 
+                                :zoom="14" 
+                                map-type-id="terrain"
+                            >
+
+                                <gmap-marker :position="{lat:43.7945459, lng:-79.2362956}" 
+                                    :clickable="true" 
+                                    :draggable="true" 
+                                    @click="center=m.position"
+                                ></gmap-marker>
+
+                            </gmap-map>
+
+                            <address>
+                                5183 Sheppard Ave E, 
+                                <br> Scarborough, ON 
+                                <br> M1B 5Z5
+                            </address>
+
+                            <p class="has-text-centered is-hidden-desktop">
+                                <a href="https://www.google.ca/maps/place/5183+Sheppard+Ave+E,+Scarborough,+ON+M1B+5Z5/@43.7945459,-79.2362956,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4d0e7d06c2d59:0xbf9b7c53a0bcc930!8m2!3d43.7945459!4d-79.2341069" target="_blank" class="button is-danger is-large">
+                                    <span class="icon">
+                                        <i class="fa fa-map"></i>
+                                    </span>
+                                    <span>Map</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-container">
+                    <div class="location location-gala">
+                        <div class="location-header">
+                            <h1 class="title is-size-2">
+                                <img src="/images/gala-section-logo.png">
+                            </h1>
+                        </div>
+
+                        <div class="location-middle">
+
+                            <gmap-map class="map is-hidden-touch" :center="{lat:43.8194635, lng:-79.2353246}" :zoom="14" map-type-id="terrain">
+                            
+                                <gmap-marker :position="{lat:43.8194635, lng:-79.2353246}" :clickable="true" :draggable="true" @click="center=m.position"></gmap-marker>
+                            
+                            </gmap-map>
+
+                            <address>
+                                20 Torham Pl, 
+                                <br> Toronto, ON 
+                                <br> M1X 1E3
+                            </address>
+
+                            <p class="has-text-centered is-hidden-desktop">
+                                <a href="https://www.google.ca/maps/place/Scarborough+Convention+Centre/@43.8194635,-79.2353246,17.2z/data=!4m13!1m7!3m6!1s0x89d4d7318b18260f:0xaa07e3a47375b182!2sTorham+Pl,+Scarborough,+ON+M1X+0B3!3b1!8m2!3d43.8198684!4d-79.2325194!3m4!1s0x89d4d7319c610fe5:0x165579460136fd2a!8m2!3d43.8209875!4d-79.231016" target="_blank" class="button is-danger is-large">
+                                    <span class="icon">
+                                        <i class="fa fa-map"></i>
+                                    </span>
+                                    <span>Map</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="pricing" class="pricing-content content">
+
+            <div class="section-title has-text-weight-bold">
+                Pricing
+            </div>
+
+            <div class="prices">
+
+                <div class="price">
+                    <div class="price-title">
+                        <h1 class="conference-brand is-size-2 is-marginless">
+                            <span>CULTURE</span>
+                            <span>COUNTS</span>
+                            <span>CONFERENCE</span>
+                        </h1>
+                    </div>
+
+                    <div class="price-prices">
+                        <ul>
+                            <li>
+                                <span class="price-type">General</span>
+                                <span class="price-amount">$100</span>
+                            </li>
+                            <li>
+                                <span class="price-type">Students &amp; Parents</span>
+                                <span class="price-amount">$70</span>
+                            </li>
+                            <li class="price-how">
+                                <span class="price-amount">
+                                    Purchase through Eventbrite
+                                    <a href="http://bit.ly/2zWgFPG" target="_blank" class="button is-danger">Buy Tickets</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-title">
+                        <h1 class="title is-size-2 is-marginless">
+                            <img src="/images/musical-section-logo.png">
+                        </h1>
+                    </div>
+
+                    <div class="price-prices">
+                        <ul>
+                            <li>
+                                <span class="price-type">VIP</span>
+                                <span class="price-amount">$50</span>
+                            </li>
+                            <li>
+                                <span class="price-type">General</span>
+                                <span class="price-amount">$30</span>
+                            </li>
+                            <li class="price-how">
+                                <span class="price-amount">
+                                    Purchase through Eventbrite
+                                    <a href="http://bit.ly/2izjKxS" target="_blank" class="button is-danger">Buy Tickets</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-title">
+                        <h1 class="gala-title title is-size-2 is-marginless">
+                            <img src="/images/gala-section-logo.png">
+                        </h1>
+                    </div>
+
+                    <div class="price-prices">
+                        <ul>
+                            <li>
+                                <span class="price-type">General</span>
+                                <span class="price-amount">$100</span>
+                            </li>
+                            <li class="invisible is-hidden-touch">
+                                <span class="price-type">dasd</span>
+                                <span class="price-amount">das</span>
+                            </li>
+                            <li class="price-how">
+                                <span class="price-amount">
+                                    Please call <b>(416) 289-0100</b> to purchase tickets
+                                </span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+
+        <section id="sponsors" class="sponsors-content content">
+        
+            <div class="section-title has-text-weight-bold">
+                Sponsors
+            </div>
+        
+            <div class="sponsors">
+                <ul>
+                    <li><img src="/images/sponsors/sickkids.png" alt=""></li>
+                    <li><img src="/images/sponsors/ontario.png" alt=""></li>
+                    <li><img src="/images/sponsors/autismspeaks.png" alt=""></li>
+                    <li><img src="/images/sponsors/autismontario.png" alt=""></li>
+                </ul>
+            </div>
+        
+        </section>
+
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.saaac.culturecountsconference" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Culture Counts Conference</name>
+    <description>
+       Official application of the 2018 Culture Counts Conference. 
+    </description>
+    <author email="jordanpjamieson@gmail.com">
+        Jordan Jamieson
+    </author>
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <access launch-external="yes" origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <icon src="logo.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="platforms/browser/res/icon/android/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="platforms/browser/res/icon/android/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="platforms/browser/res/icon/android/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="platforms/browser/res/icon/android/icon-96-xhdpi.png" />
+    <icon gap:platform="ios" height="76" src="www/res/icon/ios/icon-76.png" width="76" />
+    <icon gap:platform="ios" height="120" src="www/res/icon/ios/icon-60@2x.png" width="120" />
+    <icon gap:platform="ios" height="152" src="www/res/icon/ios/icon-76@2x.png" width="152" />
+</widget>

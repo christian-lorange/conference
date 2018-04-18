@@ -1,0 +1,13 @@
+{
+  "name": "com.saaac.culturecountsconference",
+  "version": "1.0.0",
+  "displayName": "Culture Counts Conference",
+  "cordova": {
+    "platforms": [
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "cordova-ios": "~4.5.4"
+  }
+}
