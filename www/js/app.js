@@ -1,106 +1,53 @@
-var app = angular.module('conference', ['ionic', 'conference.AppCtrl', 'conference.SessionsCtrl', 'conference.SessionCtrl',
-    'conference.FavoritesCtrl', 'conference.ProfileCtrl'])
+// We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
+(function () {
 
-    .run(function($ionicPlatform) {
-        $ionicPlatform.ready(function() {
-            // *** Do specific plugin related things here now on platform ready
-            console.log("Platform ready");
+    /* ---------------------------------- Local Variables ---------------------------------- */
+    HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
+    SessionListView.prototype.template = Handlebars.compile($("#session-list-tpl").html());
+    SessionView.prototype.template = Handlebars.compile($("#session-tpl").html());
 
-            // Override the default HTML alert with native dialog - requires the cordova dialogs plugin
-            if (navigator.notification) {
-                window.alert = function (message) {
-                    navigator.notification.alert(
-                        message,    // message
-                        null,       // callback
-                        "Conference Tracker", // title
-                        'OK'        // buttonName
-                    );
-                };
-            }
+    var service = new ConferenceService();
+    var slider = new PageSlider($('body'));
 
-            // In Ionic the accessory bar is hidden by default. Do not hide the keyboard accessory bar for this app
-            // so the drop-down form input can be used properly.
-            if(window.cordova && window.cordova.plugins.Keyboard) {
-                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
-            }
-
-            if(window.StatusBar) {
-                StatusBar.styleLightContent(); //status bar will have white text and icons
-            }
+    service.initialize().done(function () {
+        router.addRoute('', function() {
+            slider.slidePage(new HomeView(service).render().$el);
         });
-    })
 
-.config(function($stateProvider, $urlRouterProvider) {
-  //Facebook integration - Register your app and get your App ID from http://developer.facebook.com
-  openFB.init({appId: 'your-app-id'});
+        router.addRoute('sessions/:id', function(id) {
+            console.log('details');
+            service.findById(parseInt(id)).done(function(session) {
+                slider.slidePage(new SessionView(session).render().$el);
+            });
+        });
 
-
-        $stateProvider
-    .state('app.profile', {
-      url: "/profile",
-      views: {
-          'menuContent' :{
-              templateUrl: "templates/profile.html",
-              controller: "ProfileCtrl"
-          }
-      }
-    })
-
-    .state('app', {
-      url: "/app",
-      abstract: true,
-      templateUrl: "templates/menu.html",
-      controller: 'AppCtrl'
-    })
-
-    .state('app.search', {
-      url: "/search",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/search.html"
-        }
-      }
-    })
-
-    .state('app.favorites', {
-      url: "/favorites",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/favorites.html",
-          controller: "FavoritesCtrl"
-        }
-      }
-    })
-
-    .state('app.sessions', {
-      url: "/sessions",
-      views: {
-          'menuContent': {
-              templateUrl: "templates/sessions.html",
-              controller: 'SessionsCtrl'
-          }
-      }
-    })
-
-    .state('app.twitter', {
-      url: "/twitter",
-      views: {
-          'menuContent': {
-              templateUrl: "templates/twitter.html",
-              controller: 'TwitterController'
-          }
-      }
-    })
-
-    .state('app.session', {
-      url: "/sessions/:sessionId",
-      views: {
-          'menuContent': {
-              templateUrl: "templates/session.html",
-              controller: 'SessionCtrl'
-          }
-      }
+        router.start();
     });
-    // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/sessions');
-});
+
+    /* --------------------------------- Event Registration -------------------------------- */
+    document.addEventListener('deviceready', function () {
+        FastClick.attach(document.body);
+        console.log("Service " + service);
+        console.log("Service... " + service.findAll());
+        service.findAll();
+
+        StatusBar.overlaysWebView(false);
+        StatusBar.backgroundColorByHexString('#209dc2');
+        StatusBar.styleLightContent();
+
+        if (cordova.plugins.Keyboard)
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+
+        if (navigator.notification) { // Override default HTML alert with native dialog
+            window.alert = function (message) {
+                navigator.notification.alert(
+                    message,    // message
+                    null,       // callback
+                    "Workshop", // title
+                    'OK'        // buttonName
+                );
+            };
+        } else console.log("No dialog plugin found");
+    }, false);
+
+}());

@@ -1,20 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.conferencetracker278114" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>ConferenceTracker</name>
-  <description>
-        An Ionic Framework and Cordova project.
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.devgirl.day.phonegap" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhoneGapDayApp</name>
+    <description>
+        Simple conference tracking app.
     </description>
-  <author email="holly@gmail.com" href="http://devgirl.org/">
-      Holly Schinsky
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
     </author>
-  <content src="index.html"/>
-  <access origin="*"/>
-  <icon src="www/img/phonegap_wings.png"/>
-  <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
-  <preference name="DisallowOverscroll" value="true"/>
-  <preference name="BackupWebStorage" value="none"/>
-  <feature name="StatusBar">
-    <param name="ios-package" value="CDVStatusBar" onload="true"/>
-  </feature>
+
+    <!-- Whitelist open -->
+    <access origin="*" />
+
+
+    <!-- WORKSHOP NOTES.... -->
+
+    <!-- Status Bar config -->
+    <!-- Set overlay to false to leave space at the top like iOS6, iOS7 and above made status bar transparent
+         Learn all about it here: http://devgirl.org/2014/07/31/phonegap-developers-guid/   -->
+
+    <!--<preference name="StatusBarOverlaysWebView" value="false" />-->
+    <!--<preference name="StatusBarBackgroundColor" value="#209dc2"/>  only applies works when status bar overlay false -->
+    <!--<preference name="StatusBarStyle" value="lightcontent" />      light text and icons -->
+
+
+    <!-- Don't use the following values since they are deprecated, stick to above -->
+    <!--<preference name="StatusBarStyle" value="blackopaque" /><!- light text/icons -->
+    <!--<preference name="StatusBarStyle" value="blacktranslucent" /><!- black text/icons -->
+
+    <!-- Prevent webview bounce effect -->
+    <preference name="DisallowOverscroll" value="true" />
+
+    <!-- Configuring App Icons - path is relative to the root-->
+    <!-- See this link for details http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/ -->
+    <icon src="phonegap_wings.png" />
+
+
 </widget>
