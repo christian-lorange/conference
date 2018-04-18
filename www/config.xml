@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.br.phpconf" version="1.0.0">
+    <name>PHP Conference Brasil 2012</name>
+    <description>Aplicação oficial do PHP Conference Brasil 2012</description>
+    <author href="http://www.phpconference.com.br/" email="klaussilveira@php.net">Klaus Silveira</author>
+    <preference name="orientation" value="portrait" />
+    <preference name="webviewbounce" value="false" />
+    
+    <icon src="publish/icon/Icon.png" gap:role="default" />
+    <icon src="publish/icon/Icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="publish/icon/Icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="publish/icon/Icon@2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="publish/icon/Icon-72@2x.png" gap:platform="ios" width="144" height="144" />
+    <icon src="publish/icon/36x36.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="publish/icon/48x48.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="publish/icon/Icon-72.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="publish/icon/96x96.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="publish/splash/480x800.png" />
+    <gap:splash src="publish/splash/320x480.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="publish/splash/640x960.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="publish/splash/768x1024.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="publish/splash/320x480.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="publish/splash/320x480.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="publish/splash/480x800.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="publish/splash/720x1280.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="publish/splash/480x800.jpg" gap:platform="winphone" />
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+</widget>

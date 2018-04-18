@@ -1,0 +1,8 @@
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar na agenda..." data-inset="true" class="agenda">
+    {{#each items}}
+        <li data-role="list-divider">{{time}}</li>
+        {{#each events}}
+            <li data-icon="false"><a href="#" class="palestra" name="{{id}}">{{title}} <span class="room-name">{{room}}</span></a></li>
+        {{/each}}
+    {{/each}}
+</ul>

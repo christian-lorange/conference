@@ -1,0 +1,66 @@
+<h3>{{items.title}}</h3>
+<p>{{items.summary}}</p>
+<p>{{items.description}}</p>
+
+<div data-role="collapsible">
+<h4>Tópicos</h4>
+<ul>
+    <li>{{items.first_topic}}</li>
+    <li>{{items.second_topic}}</li>
+    <li>{{items.third_topic}}</li>
+</ul>
+</div>
+
+<div data-role="collapsible">
+<h4>Requerimentos</h4>
+{{items.requirements}}
+</div>
+
+<div data-role="collapsible">
+<h4>Horário e Local</h4>
+<p>Dia {{items.actual_date}} às {{items.begin_time}} em {{items.room}}</p>
+</div>
+
+<div data-role="collapsible">
+<h3>Sobre o palestrante</h3>
+<h4>{{items.first_name}} {{items.last_name}}</h4>
+<p>{{items.resume}}</p>
+
+<div class="ui-grid-d">
+    {{#if items.site}}
+    <a href="http://{{items.site}}" data-role="button" data-mini="true" target="_blank">Website</a>
+    {{/if}}
+
+    {{#if items.blog}}
+    <a href="http://{{items.blog}}" data-role="button" data-mini="true" target="_blank">Blog</a>
+    {{/if}}
+
+    {{#if items.twitter_acc}}
+    <a href="https://twitter.com/{{items.twitter_acc}}" data-role="button" data-mini="true" target="_blank">Twitter</a>
+    {{/if}}
+
+    {{#if items.facebook_acc}}
+    <a href="http://facebook.com/{{items.facebook_acc}}" data-role="button" data-mini="true" target="_blank">Facebook</a>
+    {{/if}}
+
+    {{#if items.linkedin_acc}}
+    <a href="http://linkedin.com/in/{{items.linkedin_acc}}" data-role="button" data-mini="true" target="_blank">LinkedIn</a>
+    {{/if}}
+
+    {{#if items.joindin_acc}}
+    <a href="http://joind.in/user/view/{{items.joindin_acc}}" data-role="button" data-mini="true" target="_blank">JoindIn</a>
+    {{/if}}
+
+    {{#if items.gplus_acc}}
+    <a href="https://plus.google.com/{{items.gplus_acc}}" data-role="button" data-mini="true" target="_blank">Google Plus</a>
+    {{/if}}
+
+    {{#if items.github_acc}}
+    <a href="http://github.com/{{items.github_acc}}" data-role="button" data-mini="true" target="_blank">Github</a>
+    {{/if}}
+
+    {{#if items.slideshare_acc}}
+    <a href="http://slideshare.net/{{items.slideshare_acc}}" data-role="button" data-mini="true" target="_blank">Slideshare</a>
+    {{/if}}
+</div>
+</div>

@@ -1,0 +1,13 @@
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar palestrantes..."  data-inset="true">
+    {{#each items}}
+    <li>
+        {{#if picture}}
+            <img src="http://phpconference.com.br/images/pictures/authors/{{picture}}" class="palimg" />
+        {{else}}
+            <img src="http://www.placehold.it/60x60" class="palimg" />
+        {{/if}}
+        <h3>{{first_name}} {{last_name}}</h3>
+        <p>{{resume}}</p>
+    </li>
+    {{/each}}
+</ul>
