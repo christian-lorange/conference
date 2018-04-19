@@ -1,3 +1,8 @@
+body, h1, h2, h3, p {font-family: "Arial Black", Gadget, sans-serif;}
+
+p {padding: 3px;
+text-align: center;}
+
 .container {
     padding-right: 0px !important; 
     padding-left: 0px !important; 
@@ -61,7 +66,7 @@ label {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: white;
 }
 
 /* Modal Content */
@@ -72,16 +77,17 @@ label {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  height: 100%;
 }
 
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: bolder;
 }
 
 .close:hover,
@@ -145,12 +151,13 @@ tr {
     display: block;
     margin-bottom: 1.5rem;
     padding: 1rem 0.5rem 0.5rem 1rem;
+    margin-bottom:0px;
   
     box-shadow: 0 0 1rem transparentize( black, 0.9 );
 }
 
-tr:nth-child(even) {background: blue}
-tr:nth-child(odd) {background: green}
+tr:nth-child(even) {background: white}
+tr:nth-child(odd) {background: #c7eaea}
 
 td {
     display: inline-block;
@@ -189,7 +196,7 @@ td:empty {
 }
 
 td.tpl {
-width:15vw !important;
+width:23vw !important;
 text-align: center;
 height: 50px;
 vertical-align: middle !important;
@@ -201,7 +208,7 @@ font-weight: bold;
 }
 
 td.tpr {
-width:57vw !important;
+width:40vw !important;
 text-align: center;
 height: 50px;
 vertical-align: middle !important;
@@ -212,7 +219,7 @@ font-weight: bold;
 }
 
 td.middlerow {
-width:91.5vw !important;
+width:92.0vw !important;
 text-align: center;
 height: 50px;
 vertical-align: middle !important;
@@ -308,21 +315,22 @@ a {
   min-height: 100vh;
 }
 #schedule {
-  background-color: #ff765a;
+  background-color: #1d8c51;
   padding-top: 80px;
 }
 #favorites {
-  background-color: #5aff8c;
+  background-color: #c9c486;
   padding-top: 80px;
 }
 #faq {
-  background-color: #5acbff;
+  background-color: #1d8c51;
   padding-top: 80px;
 }
 
 #foco {
   background-color: white;
     padding-top: 60px;
+    padding-bottom:30px;
 }
 
 h1.headers {
@@ -333,3 +341,20 @@ img.sponsor {width:30%;
 vertical-align: middle !important;}
 
 .sponsor {text-align: center;}
+
+.artist {
+  text-align: center;
+
+}
+
+p.artist  {
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+img.artist {width: 80%;}
+
+a.artist {text-align: center;
+  color:black;
+font-weight: bold;f
+padding: 10px;}
