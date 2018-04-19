@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="personList">
 <head>
-	<title>First test task, Angular</title>
+	<title>FoCo MX Music Schedule</title>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,13 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
 
-	 <script src="js/jquery-3.2.1.js"></script>
-<script src="js/jquery-1.4.2.min.js"></script>
-   <script src="js/app.js"></script>
 
-   <script type="text/javascript" language="javascript" src="js/tablefilter.js"></script>  
+	 <script src="js/jquery-3.2.1.js"></script>
+	 <script src="js/jquery-1.4.2.min.js"></script>
+
+   	<script src="js/app.js"></script>
+ 
+
 
 	
 
@@ -24,22 +26,21 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+
+
 </head>
+
+
+
 <body >
 
 	<TABLE ID="FIRST" class="FIRST">
 	<thead>
                         <tr>
                         	<th style="display:none;">ID</th>
-                            <th><select id='filterText1' style='display:inline-block' onchange='filterText1()'>
-										<option disabled selected>Day</option>
-										<option value='Friday'>Friday</option>
-										<option value='Saturday'>Saturday</option>
-										<option value='Sunday'>Sunday</option>
-										<option value='all'>All</option>
-									</select>
-							</th>
-                            <th>Time</th>
+                            <th>Day</th>
+                            <th>Venue</th>
                             <th>Band</th>
                             <th>Learn More</th>
                             <th></th>
@@ -50,50 +51,53 @@
 <hr />
 
 
+<div class='container'>
 
 
-<TABLE ID="SECOND" class="SECOND"> 
+<input id="myInput" type="text" value="" />
+
+
+<TABLE ID="SECOND" class="SECOND cards-table"> 
 	<thead>
                         <tr>
                         	<th style="display:none;">ID</th>
-                            <th><select id='filterText2' style='display:inline-block' onchange='filterText2()'>
-										<option disabled selected>Day</option>
-										<option value='Friday'>Friday</option>
-										<option value='Saturday'>Saturday</option>
-										<option value='Sunday'>Sunday</option>
-										<option value='all'>All</option>
-									</select>
-							</th>
+                            <th>Date</th>
                             <th>Time</th>
+                            <th>Venue</th>
                             <th>Band</th>
                             <th>Learn More</th>
                             <th></th>
                         </tr>
                     </thead>
-<TR class="content">
-<TD class="sortnr" style="display:none;">1</TD>
-<TD>Friday</TD>
-<TD>First Value</TD>
-<TD>Extra First</TD>
-<TD><input type="button" value="LEARN MORE" onclick="openModal();currentSlide(1)" /></TD>
-<TD><A HREF="#">Add to My List</A></TD>
-</TR>
-<TR class="content">
-<TD class="sortnr" style="display:none;">2</TD>
-<TD>Friday</TD>
-<TD>Second Value</TD>
-<TD>Extra Second</TD>
-<TD><input type="button" value="LEARN MORE" onclick="openModal();currentSlide(2)" /></TD>
-<TD><A HREF="#">Add to My List</A></TD>
+<tbody>
+<tr class="content" >
+<td class="sortnr" style="display:none;">1</td>
+<td class="tpl">Fri</td>
+<td class="tpl">TIME</td>
+<td class="tpr">Hodis</td>
+<td class="middlerow">BAND</td>
+<td class="bottomrow"><button onclick="openModal();currentSlide(1)">LEARN MORE</button></td>
+<td class="bottomrow"><A HREF="#">FAVORITES</A></td>
+</tr>
+<tr class="content">
+<td class="sortnr" style="display:none;">2</TD>
+<td class="tpl">Fri</TD>
+<td class="tpl">TIME</td>
+<td class="tpr">Second Value</TD>
+<td class="middlerow">Extra Second</TD>
+<td class="bottomrow"><button onclick="openModal();currentSlide(2)">LEARN MORE</button></td>
+<td class="bottomrow"><A HREF="#">FAVORITES</A></TD>
 </TR>
 <TR class="content">
 <TD class="sortnr" style="display:none;">3</TD>
-<TD>Saturday</TD>
-<TD>...</TD>
-<TD>Extra Third</TD>
-<TD><input type="button" value="LEARN MORE" onclick="openModal();currentSlide(3)" /></TD>
-<TD><A HREF="#">Add to My List</A></TD>
+<TD class="tpl">Sat</TD>
+<td class="tpl">TIME</td>
+<TD class="tpr">...</TD>
+<TD class="middlerow">Extra Third</TD>
+<td class="bottomrow"><button onclick="openModal();currentSlide(3)">LEARN MORE</button></td>
+<TD class="bottomrow"><A HREF="#">FAVORITES</A></TD>
 </TR>
+</tbody>
 </TABLE>
 
 
@@ -119,115 +123,35 @@
     
 </div>
 
-<script>
-function filterText1()
-	{  
-		var rex = new RegExp($('#filterText1').val());
-		if(rex =="/all/"){clearFilter()}else{
-			$('.FIRST .content').hide();
-			$('.FIRST .content').filter(function() {
-			return rex.test($(this).text());
-			}).show();
-	}
-	}
-	
-function clearFilter()
-	{
-		$('.filterText1').val('');
-		$('.FIRST .content').show();
-	}
+
+</div>
 
 
-function sortTable(){
-    var tbl = document.getElementById("FIRST").tBodies[0];
-    var store = [];
-    for(var i=0, len=tbl.rows.length; i<len; i++){
-        var row = tbl.rows[i];
-        var sortnr = parseFloat(row.cells[0].textContent || row.cells[0].innerText);
-        if(!isNaN(sortnr)) store.push([sortnr, row]);
+  <script type="text/javascript">
+        function filterTable(event) {
+    var filter = event.target.value.toUpperCase();
+    var rows = document.querySelector("#SECOND tbody").rows;
+    
+    for (var i = 0; i < rows.length; i++) {
+        var firstCol = rows[i].cells[0].textContent.toUpperCase();
+        var secondCol = rows[i].cells[1].textContent.toUpperCase();
+        var thirdCol = rows[i].cells[2].textContent.toUpperCase();
+        var fourthCol = rows[i].cells[3].textContent.toUpperCase();
+        var fifthCol = rows[i].cells[4].textContent.toUpperCase();
+          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || fourthCol.indexOf(filter) > -1 || fifthCol.indexOf(filter) > -1) {
+            rows[i].style.display = "";
+        } else {
+            rows[i].style.display = "none";
+        }      
     }
-    store.sort(function(x,y){
-        return x[0] - y[0];
-    });
-    for(var i=0, len=store.length; i<len; i++){
-        tbl.appendChild(store[i][1]);
-    }
-    store = null;
 }
 
-function filterText2()
-	{  
-		var rex = new RegExp($('#filterText2').val());
-		if(rex =="/all/"){clearFilter()}else{
-			$('.SECOND .content').hide();
-			$('.SECOND .content').filter(function() {
-			return rex.test($(this).text());
-			}).show();
-	}
-	}
-	
-function clearFilter()
-	{
-		$('.filterText2').val('');
-		$('.SECOND .content').show();
-	}
-
-
-function sortTable(){
-    var tbl = document.getElementById("SECOND").tBodies[0];
-    var store = [];
-    for(var i=0, len=tbl.rows.length; i<len; i++){
-        var row = tbl.rows[i];
-        var sortnr = parseFloat(row.cells[0].textContent || row.cells[0].innerText);
-        if(!isNaN(sortnr)) store.push([sortnr, row]);
-    }
-    store.sort(function(x,y){
-        return x[0] - y[0];
-    });
-    for(var i=0, len=store.length; i<len; i++){
-        tbl.appendChild(store[i][1]);
-    }
-    store = null;
-}
-
+document.querySelector('#myInput').addEventListener('keyup', filterTable, false);
+    </script>
 
 
 
 </script>
-
-<script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
 
 	
 </body>

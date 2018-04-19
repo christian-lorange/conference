@@ -1,3 +1,8 @@
+.container {
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
+  };
+
 td, th {
 	text-align: center;
 	padding: 3px;
@@ -122,4 +127,136 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+
+.wrap {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+thead {
+    display: none;
+}
+
+tr {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0.5rem 0.5rem 1rem;
+  
+    box-shadow: 0 0 1rem transparentize( black, 0.9 );
+}
+
+tr:nth-child(even) {background: blue}
+tr:nth-child(odd) {background: green}
+
+td {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: white;
+    border: 1px solid transparentize( #58C25F, 0.5 );
+
+}
+
+td:before {
+    float: left;
+    margin: -0.5rem 0.5rem -0.5rem -0.5rem;
+    padding: 0.625rem 0.5rem 0.625rem;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: transparentize( #58C25F, 0.9 );
+    color: #58C25F;
+}
+
+td[data-label="Column D"] {
+    display: block;
+    float: none;
+
+    &:before {
+        display: block;
+        margin-right: -0.5rem;
+        margin-bottom: 0.5rem;
+        float: none;
+    }
+}
+
+td:empty {
+    display: none;
+}
+
+td.tpl {
+width:15vw !important;
+text-align: center;
+height: 50px;
+vertical-align: middle !important;
+padding-top: 12px;
+border-radius: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-weight: bold;
+
+}
+
+td.tpr {
+width:59vw !important;
+text-align: center;
+height: 50px;
+vertical-align: middle !important;
+padding-top: 12px;
+border-radius: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-weight: bold;
+}
+
+td.middlerow {
+width:93.5vw !important;
+text-align: center;
+height: 50px;
+vertical-align: middle !important;
+padding-top: 12px;
+border-radius: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-weight: bold;
+}
+
+td.bottomrow {
+width:45.7vw !important;
+text-align: center;
+height: 50px;
+vertical-align: middle !important;
+padding-top: 12px;
+background-color: black;
+color: white;
+border-radius: 40px;
+font-weight: bolder;
+
+
+}
+
+td.bottomrow a {color: white;}
+td.bottomrow button {
+  width:45.7vw !important;
+text-align: center;
+height: 50px;
+vertical-align: middle !important;
+padding-top: 0px;
+background-color: transparent;
+color: white;
+border: none;
+font-weight: bold;
+
+margin-top: -13px;
+margin-left: -6px;}
+
+#myInput {
+  width:93.5vw;
+  margin-left: 2vw;
+  height: 50px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5em;
 }
