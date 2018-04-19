@@ -201,7 +201,7 @@ font-weight: bold;
 }
 
 td.tpr {
-width:59vw !important;
+width:57vw !important;
 text-align: center;
 height: 50px;
 vertical-align: middle !important;
@@ -212,7 +212,7 @@ font-weight: bold;
 }
 
 td.middlerow {
-width:93.5vw !important;
+width:91.5vw !important;
 text-align: center;
 height: 50px;
 vertical-align: middle !important;
@@ -223,7 +223,7 @@ font-weight: bold;
 }
 
 td.bottomrow {
-width:45.7vw !important;
+width:44.7vw !important;
 text-align: center;
 height: 50px;
 vertical-align: middle !important;
@@ -259,4 +259,37 @@ margin-left: -6px;}
   margin-bottom: 10px;
   text-align: center;
   font-size: 2.5em;
+}
+
+.menu{
+    margin:20px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 ;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+      transition: max-height 0.2s ease-out;
 }

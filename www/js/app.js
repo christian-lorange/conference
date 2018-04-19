@@ -6,15 +6,15 @@ $(function() {
              .text(newLinkText);
    }
    
-   $("#FIRST A").live("click", function(){
+   $("#FIRST").on("click",'a', function(){
        moveRow($(this).parents("tr"), $("#SECOND").clone(), "Add to My List");
    });
 
-   $("#SECOND A").live("click", function(){
+   $("#SECOND").on("click",'a', function(){
        moveRow($(this).parents("tr").clone(), $("#FIRST"), "REMOVE");
        sortTable();
    });
-   $('#FIRST A,#SECOND A').live('click', function() {
+   $('#FIRST,#SECOND').on('click','a',function() {
      localStorage.setItem('FIRST',$('#FIRST').html());
      localStorage.setItem('SECOND',$('#SECOND').html());
    });
@@ -104,3 +104,7 @@ tables.each(function(table) {
     });
   });
 });
+
+
+
+
