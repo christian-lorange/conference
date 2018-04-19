@@ -266,30 +266,70 @@ margin-left: -6px;}
 }
 
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+nav {
+ box-sizing: border-box;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ padding: 20px 0px;
+ text-align: center;
+ background-color: #333;
+ font-size: 14px;
+ letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eee;
+  padding: 1px 0;
+  margin: 0 10px;
+  transition: all 0.15s ease-in-out;
+}
+.hov-color-red.is-current,
+.hov-color-red:hover {
+   color: #ff765a;
+}
+.hov-color-green.is-current,
+.hov-color-green:hover {
+  color: #5aff8c;
+}
+.hov-color-blue.is-current,
+.hov-color-blue:hover {
+  color: #5acbff;
 }
 
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
+.wide {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+}
+#schedule {
+  background-color: #ff765a;
+  padding-top: 80px;
+}
+#favorites {
+  background-color: #5aff8c;
+  padding-top: 80px;
+}
+#faq {
+  background-color: #5acbff;
+  padding-top: 80px;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 ;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-      transition: max-height 0.2s ease-out;
+#foco {
+  background-color: white;
+    padding-top: 60px;
 }
+
+h1.headers {
+  text-align: center;
+}
+
+img.sponsor {width:30%;
+vertical-align: middle !important;}
+
+.sponsor {text-align: center;}
