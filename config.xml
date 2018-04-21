@@ -147,20 +147,6 @@
         
 -->
 </platform>
-<!--
 
-    <platform name="windows">
-        <icon src="res/icon/windows/storelogo.png" target="StoreLogo"/>
-        <icon src="res/icon/windows/smalllogo.png" target="Square30x30Logo"/>
-        <icon src="res/icon/windows/Square44x44Logo.png" target="Square44x44Logo"/>
-        <icon src="res/icon/windows/Square70x70Logo.png" target="Square70x70Logo"/>
-        <icon src="res/icon/windows/Square71x71Logo.png" target="Square71x71Logo"/>
-        <icon src="res/icon/windows/Square150x150Logo.png" target="Square150x150Logo"/>
-        <icon src="res/icon/windows/Square310x310Logo.png" target="Square310x310Logo"/>
-
-        <splash src="res/screen/windows/splashscreen.png" target="SplashScreen"/>
-        <splash src="res/screen/windows/splashscreenphone.png" target="SplashScreenPhone"/>
-    </platform>
-    
     
 </widget>
