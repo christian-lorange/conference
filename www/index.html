@@ -100,13 +100,11 @@
             <td class="tpl">Fri</td>
             <td class="tpr">3:30pm-4:15pm</td>
             <td class="tpr">Rock-Pop</td>
-            <td class="middlerow">Equinox Brewing</td>
             <td class="middlerow">Michael Kirkpatrick</td>
-            <td class="bottomrow">
-                <a href="http://focomx.focoma.org/artists/michael-kirkpatrick">FOCOMX PAGE</a>
-            </td>
-            <td class="bottomrow">
-                <a href="#">FAVORITES</a>
+            <td class="bottomrow">Equinox Brewing</td>
+       
+            <td class="heart">
+                <a href="#">&#9829;</a>
             </td>
         </tr>
         <tr class="content">
@@ -5397,7 +5395,7 @@
      <h3 class="artist">Grungy Blues Rock</h3>
      <p class="artist">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
      <div class="artist"><img src="img/artist/a1.PNG" alt="FocoBanner" class="artist"></div>
-     <div class="artist"><a href="url" class="artist">WEBSITE</a><a href="url" class="artist">FACEBOOK</a></div>
+     <div class="artist"><a href="http://www.hyperlinkcode.com/button-links.php" class="artist">WEBSITE</a><a href="url" class="artist">FACEBOOK</a></div>
     </div>
 
     <div class="mySlides">
@@ -5618,7 +5616,8 @@ Or enjoy the 10% FoCoMX discount at the brand-new Elizabeth Hotel!</p>
         var thirdCol = rows[i].cells[2].textContent.toUpperCase();
         var fourthCol = rows[i].cells[3].textContent.toUpperCase();
         var fifthCol = rows[i].cells[4].textContent.toUpperCase();
-          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || fourthCol.indexOf(filter) > -1 || fifthCol.indexOf(filter) > -1) {
+        var sixthCol = rows[i].cells[5].textContent.toUpperCase();
+          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || fourthCol.indexOf(filter) > -1 || fifthCol.indexOf(filter) > -1 || sixthCol.indexOf(filter) > -1) {
             rows[i].style.display = "";
         } else {
             rows[i].style.display = "none";
