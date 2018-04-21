@@ -196,34 +196,36 @@ td:empty {
 }
 
 td.tpl {
-width:23vw !important;
+width:13vw !important;
 text-align: center;
-height: 50px;
+height: 35px;
 vertical-align: middle !important;
-padding-top: 12px;
+padding-top: 5px;
 border-radius: 15px;
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
+font-size: 0.8em;
 
 }
 
 td.tpr {
-width:40vw !important;
+width:36vw !important;
 text-align: center;
-height: 50px;
+height: 35px;
 vertical-align: middle !important;
-padding-top: 12px;
+padding-top: 5px;
 border-radius: 15px;
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
+font-size: 0.8em;
 }
 
 td.middlerow {
 width:92.0vw !important;
 text-align: center;
-height: 50px;
+height: 35px;
 vertical-align: middle !important;
-padding-top: 12px;
+padding-top: 5px;
 border-radius: 15px;
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
@@ -232,9 +234,9 @@ font-weight: bold;
 td.bottomrow {
 width:44.7vw !important;
 text-align: center;
-height: 50px;
+height: 35px;
 vertical-align: middle !important;
-padding-top: 12px;
+padding-top: 3px;
 background-color: black;
 color: white;
 border-radius: 40px;
@@ -247,7 +249,7 @@ td.bottomrow a {color: white;}
 td.bottomrow button {
   width:45.7vw !important;
 text-align: center;
-height: 50px;
+height: 35px;
 vertical-align: middle !important;
 padding-top: 0px;
 background-color: transparent;
@@ -255,7 +257,7 @@ color: white;
 border: none;
 font-weight: bold;
 
-margin-top: -13px;
+margin-top: -4px;
 margin-left: -6px;}
 
 #myInput {
