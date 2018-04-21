@@ -11,7 +11,7 @@ $(function() {
    });
 
    $("#SECOND").on("click",'a', function(){
-       moveRow($(this).parents("tr").clone(), $("#FIRST"), "REMOVE");
+       moveRow($(this).parents("tr").clone(), $("#FIRST"), "X");
        sortTable();
    });
    $('#FIRST,#SECOND').on('click','a',function() {

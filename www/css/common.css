@@ -231,6 +231,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
 }
 
+.middlerow button{
+  background-color: transparent;
+  border:none;
+  color:#555;
+  padding-bottom: 2px;
+}
+
 td.bottomrow {
 width:78.7vw !important;
 text-align: center;
@@ -245,7 +252,7 @@ font-weight: bolder;
 }
 
 td.heart {
-width:10vw !important;
+width:11vw !important;
 text-align: center;
 height: 35px;
 vertical-align: middle !important;
@@ -257,8 +264,8 @@ font-weight: bolder;
 font-size: 2em;
 padding-left:0;
 
-
 }
+
 
 td.bottomrow a {color: white;}
 td.bottomrow button {
