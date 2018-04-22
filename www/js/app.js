@@ -13,6 +13,7 @@ $(function() {
    $("#SECOND").on("click",'a', function(){
        moveRow($(this).parents("tr").clone(), $("#FIRST"), "X");
        sortTable();
+       document.getElementById('favorites').scrollIntoView();
    });
    $('#FIRST,#SECOND').on('click','a',function() {
      localStorage.setItem('FIRST',$('#FIRST').html());

@@ -201,7 +201,7 @@ text-align: center;
 height: 35px;
 vertical-align: middle !important;
 padding-top: 5px;
-border-radius: 15px;
+
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
 font-size: 0.8em;
@@ -214,7 +214,7 @@ text-align: center;
 height: 35px;
 vertical-align: middle !important;
 padding-top: 5px;
-border-radius: 15px;
+
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
 font-size: 0.8em;
@@ -229,6 +229,7 @@ padding-top: 5px;
 border-radius: 15px;
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
+background-color: #FAD7A0;
 }
 
 .middlerow button{
@@ -236,6 +237,7 @@ font-weight: bold;
   border:none;
   color:#555;
   padding-bottom: 2px;
+
 }
 
 td.bottomrow {
@@ -247,9 +249,9 @@ padding-top: 3px;
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 40px;
 font-weight: bolder;
-
-
+background-color: #FAD7A0;
 }
+
 
 td.heart {
 width:11vw !important;
@@ -277,7 +279,7 @@ height: 35px;
 vertical-align: middle !important;
 padding-top: 0px;
 background-color: transparent;
-color: white;
+color: #555;
 border: none;
 font-weight: bold;
 
@@ -374,6 +376,11 @@ vertical-align: middle !important;}
 
 }
 
+.artist a {
+  color:black !important;
+  font-weight: bold;
+}
+
 p.artist  {
   padding: 5px;
   font-size: 0.8em;
@@ -383,5 +390,5 @@ img.artist {width: 80%;}
 
 a.artist {text-align: center;
   color:black;
-font-weight: bold;f
+font-weight: bold;
 padding: 10px;}
