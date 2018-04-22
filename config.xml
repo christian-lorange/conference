@@ -42,8 +42,22 @@
 
     <!-- Define app icon for each platform. -->
     
+       <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    
+    
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
     <!--
         Define access to external domains.
+
+
 
         <access />            - a blank access tag denies access to all external resources.
         <access origin="*" /> - a wildcard access tag allows access to all external resource.
