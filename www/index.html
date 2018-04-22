@@ -8869,7 +8869,7 @@
     <div class="mySlides">
         <h2 class="artist">Illegal Pete's</h2>
         <h3 class="artist">320 Walnut St, Fort Collins, CO 80524</h3>
-        <p class="artist"><img alt="FocoBanner" src="img/v389.PNG style="width: 100%"></p>
+        <p class="artist"><img alt="FocoBanner" src="img/v389.PNG" style="width: 100%"></p>
         <div class="artist">
             <a href="https://goo.gl/maps/2AtNmSsMVRA2" target="_blank" title="Directions">Live Map</a>
         </div>
@@ -9034,7 +9034,13 @@
 
  
 
-
+<script type="text/javascript">
+    document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    window.open = cordova.InAppBrowser.open;
+}
+    
+</script>
 
 
 
