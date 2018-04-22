@@ -257,13 +257,15 @@ text-align: center;
 height: 35px;
 vertical-align: middle !important;
 padding-top: 3px;
-background-color: red;
-color: white;
-border-radius: 40px;
+background-color: transparent;
+border:none;
 font-weight: bolder;
 font-size: 2em;
 padding-left:0;
 
+}
+.heart a{
+  color: black;
 }
 
 
@@ -359,6 +361,7 @@ a {
 
 h1.headers {
   text-align: center;
+  color: white;
 }
 
 img.sponsor {width:30%;
