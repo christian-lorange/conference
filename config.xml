@@ -42,7 +42,7 @@
 
     <!-- Define app icon for each platform. -->
     
-       <plugin name="cordova-plugin-whitelist" version="1" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     
@@ -53,7 +53,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    
+
     <!--
         Define access to external domains.
 

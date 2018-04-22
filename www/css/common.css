@@ -204,7 +204,7 @@ padding-top: 5px;
 
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
-font-size: 0.8em;
+font-size: 0.7em;
 
 }
 
@@ -217,7 +217,7 @@ padding-top: 5px;
 
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
-font-size: 0.8em;
+font-size: 0.7em;
 }
 
 td.middlerow {
@@ -230,6 +230,7 @@ border-radius: 15px;
 box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: bold;
 background-color: #FAD7A0;
+font-size: 0.9em;
 }
 
 .middlerow button{
@@ -250,6 +251,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 40, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 40px;
 font-weight: bolder;
 background-color: #FAD7A0;
+font-size: 0.9em;
 }
 
 
