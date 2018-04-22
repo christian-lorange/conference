@@ -5,7 +5,7 @@
         id        = "com.orangehousefocomx.app"
         version   = "1.0.0">
 
-    <name>Gorilla FoCo Music</name>
+    <name>FoCo Gorilla Music</name>
 
     <description>View the schedule of the FoCoMX music festival and save your favorite shows to your personal list.</description>
 

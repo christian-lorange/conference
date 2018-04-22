@@ -48,26 +48,44 @@
 <section id="foco" class="wide">
 
 <h1 class="headers" style="padding-top: -20px;"><img src="img/banner.jpg" alt="FocoBanner" style="width: 100%;"></h1>
-
-
-<!--<p class="frontmaterial">Welcome to FoCoMX 2018! It’s our 10th year celebrating the Northern Colorado music scene, and we hope you’ll take the time to scour the 300+ different performers playing this year’s event at 30+ venues. You may also want to Like our <a href="http://facebook.com/focomx">Facebook</a> page or join us on <a href="http://twitter.com/focomx">Twitter</a> to get updates.</p>
-
-<p class="frontmaterial">We are so lucky to have such a vibrant scene that is supported by music lovers and our community at large. Thank you to everyone for making such an event possible! FoCoMX, presented by the nonprofit <a href="http://www.focoma.org">Fort Collins Musicians Association (FoCoMA)</a> and <a href="https://www.odellbrewing.com/"><button onclick="openModal();currentSlide(396)">Odell Brewing Co</button>.</a>, has garnered national attention and earned the unofficial title of “The Biggest Little Festival in America.”</p>
-
-<p class="frontmaterial">Learn more about <a href="http://www.focoma.org">FoCoMA - Fort Collins Musicians Association</a></p>-->
-
-<p>Integer id lorem rutrum, maximus velit nec, ultricies augue. Suspendisse potenti. Integer consequat, mi sit amet ultrices convallis, ipsum lectus semper ipsum, maximus eleifend nisi nisl aliquet purus. Vivamus sed efficitur erat, eget condimentum elit. </p>
-
-<p>Cras ut leo nisl. Phasellus nunc tellus, viverra sit amet scelerisque et, convallis id velit. Quisque vitae est purus. Morbi eget mattis erat. Maecenas orci magna, ultricies ac urna eu, elementum blandit neque. Curabitur sodales magna at congue rhoncus. Curabitur volutpat porttitor eleifend. Aliquam et tincidunt nisi. Ut placerat pharetra lorem at dapibus. Donec sed ligula vel metus dignissim commodo.
-
-</p>
-
-
-<h2 style="text-align: center;">Special Thanks to Our Sponsors!</h2>
-
-
+<div style="font-size: 0.7em; text-align: center; padding-left:5px; padding-right: 8px;">
+<h4>What is this?</h4>
+<p>We developed this app out of our own need. FoCoMX is always a really fun weekend but it can also be a bit overwhelming So many bands! So little time! We built this app to help us get the most out of one of the best weekends of the year. We have done our best to get an accurate list of bands and venues around town. You can filter the list be day, venue, band, and style as well as shows you want to see to your personal list.</p>
+<h4>Is this an official app for FoCoMX?</h4>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width:95vw !important;">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading1">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    Read More
+                </a>
+            </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body">
+                <p><p>Nope - It's just an easy way to search and filter information publically published by FoCoMX organizers. For official information check out <a href="http://focomx.focoma.org/" target="_blank" title="main focomx page" style="color: black">FoCoMX.</a> <a href="http://www.focoma.org/" target="_blank" title="main focoma page" style="color: black;">The Fort Collins Music Association</a> does great work. We really encourage you to check them out, voluteer, and donate. Lets all do what we can to support the Fort Collins music scene.</p>
+<h4>What's the catch? Why'd you put this together</h4>
+<p>A couple reasons: First, we love music - simple as that.  Second, we had a lot of yard work to do around the house. It was either develop this app or pick weeds - you're welcome we decided to be "productive." Finally, we run a part time freelance consulting company in addition to our day jobs. We'd been meaning to develop a similar tool for some other projects and this was a good excuse to finally get it done.</p>
+ 
+<h4 style="text-align: center;">Interested in what we do? Check out some of our other projects</h4>
+ 
+ 
     <div class="sponsor"><img src="img/s1.png" alt="FocoBanner" class="sponsor"><img src="img/s2.png" alt="FocoBanner" class="sponsor"><img src="img/s3.png" alt="FocoBanner" class="sponsor">
     </div>
+
+<h4 style="text-align: center;">Why is it called FoCo Gorilla Music?</h4>
+ <p>I wanted to call it FoCo Squirrel Music but turns out turns out I have a really hard time spelling squirrel correctly.</p>
+
+</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
    
 </section>
 
@@ -77,7 +95,7 @@
 
 <h1 class="headers">Festival Schedule</h1>
  
-<input id="myInput" type="text" value="" />
+<input id="myInput" type="text" value="" /><button id="clearbutton" onclick="document.getElementById('myInput').value = ''">&#9940;</button>
 
 
 <TABLE ID="SECOND" class="SECOND cards-table"> 
@@ -10358,6 +10376,7 @@ jQuery(document).ready(function($) {
 }
 
 document.querySelector('#myInput').addEventListener('keyup', filterTable, false);
+document.querySelector('#clearbutton').addEventListener('click', filterTable, false);
     </script>
 	
 </body>
