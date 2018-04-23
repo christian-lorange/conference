@@ -78,6 +78,7 @@ label {
   width: 90%;
   max-width: 1200px;
   height: 100%;
+  overflow: scroll;
 }
 
 /* The Close Button */
