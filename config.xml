@@ -3,7 +3,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.orangehousefocomx.app"
-        version   = "1.0.0">
+        version   = "1.0.1">
 
     <name>FoCo Gorilla Music</name>
 
@@ -27,7 +27,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-8.0.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="cli-8.0.0" />      <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -80,12 +80,12 @@
 
     <!-- Core plugins -->
     
-    <plugin name="cordova-plugin-console" />
-    <plugin name="cordova-plugin-device" />
+
+
     <plugin name="cordova-plugin-device-orientation" />
 
     <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-media" />
+
     <plugin name="cordova-plugin-splashscreen" />
 
     <plugin name="cordova-plugin-admob-free"/>
