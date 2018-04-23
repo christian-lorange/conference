@@ -88,8 +88,7 @@
     <plugin name="cordova-plugin-media" />
     <plugin name="cordova-plugin-splashscreen" />
 
-
-<gap:plugin name="phonegap-admob" source="npm"/>
+<plugin name="cordova-plugin-admob-free">
 
 <platform name="ios">
 <icon src="res/icon/ios/icon-1024.png" width="1024" height="1024"/>
