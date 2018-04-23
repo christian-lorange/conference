@@ -3,7 +3,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.orangehousefocomx.app"
-        version   = "1.0.2">
+        version   = "1.0.3">
 
     <name>FoCo Gorilla Music</name>
 
@@ -83,7 +83,7 @@
 
 
     <plugin name="cordova-plugin-device-orientation" />
-
+    <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-inappbrowser" />
 
     <plugin name="cordova-plugin-splashscreen" />
