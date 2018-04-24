@@ -4646,9 +4646,9 @@ function CallButton()
 
 <section id="favorites" class="wide">
   <h1 class="headers">My Shows</h1>
-  <button id="sT">Sort by Time</button>
+
  
-  <TABLE ID="FIRST" class="FIRST">
+  <TABLE ID="FIRST" class="FIRST cards-table">
   <thead>
                         <tr>
                           <th style="display:none;">ID</th>
@@ -4659,6 +4659,8 @@ function CallButton()
                             <th></th>
                         </tr>
                     </thead>
+                    <tbody>
+                    </tbody>
 </TABLE>
     
 <hr />
@@ -10427,6 +10429,7 @@ jQuery(document).ready(function($) {
 }
 
 function sortT(){
+
     var tbl = document.getElementById("FIRST").tBodies[0];
     var store = [];
     for(var i=0, len=tbl.rows.length; i<len; i++){
@@ -10441,6 +10444,7 @@ function sortT(){
         tbl.appendChild(store[i][1]);
     }
     store = null;
+
 }
 
 
