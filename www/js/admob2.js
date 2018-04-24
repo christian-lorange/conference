@@ -1,8 +1,8 @@
 var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   admobid = {
-   //banner: 'ca-app-pub-7061349157136298/7728721211',
-   //interstitial: 'ca-app-pub-7061349157136298/8625077904',
+   banner: 'ca-app-pub-7061349157136298/7728721211',
+   interstitial: 'ca-app-pub-7061349157136298/8625077904',
     //  banner: 'ca-app-pub-3940256099942544/6300978111',  //test id
     //  interstitial: 'ca-app-pub-3940256099942544/1033173712', // test id
   }
