@@ -289,6 +289,20 @@ font-weight: bold;
 margin-top: -4px;
 margin-left: -6px;}
 
+button#sT {
+  width:98vw !important;
+text-align: center;
+height: 35px;
+vertical-align: middle !important;
+padding-top: 0px;
+background-color: transparent;
+color: #555;
+border: none;
+font-weight: bold;
+
+margin-top: -4px;
+margin-left: -6px;}
+
 #myInput {
   width:80.5vw;
   margin-left: 2vw;

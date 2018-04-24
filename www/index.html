@@ -47,7 +47,7 @@ function CallButton()
 <nav id="navigation">
    <a data-scroll class="hov-color-green" href="#foco">Home</a>
   <a data-scroll class="hov-color-red" href="#schedule" >Schedule</a>
-  <a data-scroll class="hov-color-green" href="#favorites">Favorites</a>
+  <a data-scroll class="hov-color-green" href="#favorites" >Favorites</a>
   <a data-scroll class="hov-color-blue" href="#faq">Map</a>
 </nav>
 
@@ -4646,6 +4646,7 @@ function CallButton()
 
 <section id="favorites" class="wide">
   <h1 class="headers">My Shows</h1>
+  <button id="sT">Sort by Time</button>
  
   <TABLE ID="FIRST" class="FIRST">
   <thead>
@@ -10392,6 +10393,7 @@ jQuery(document).ready(function($) {
   // Example: 
   // `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
   function scrollToSection(event) {
+
     event.preventDefault();
     var $section = $($(this).attr('href')); 
     $('html, body').animate({
@@ -10421,9 +10423,30 @@ jQuery(document).ready(function($) {
             rows[i].style.display = "none";
         }      
     }
+
 }
 
+function sortT(){
+    var tbl = document.getElementById("FIRST").tBodies[0];
+    var store = [];
+    for(var i=0, len=tbl.rows.length; i<len; i++){
+        var row = tbl.rows[i];
+        var sortnr = parseFloat(row.cells[0].textContent || row.cells[0].innerText);
+        if(!isNaN(sortnr)) store.push([sortnr, row]);
+    }
+    store.sort(function(x,y){
+        return x[0] - y[0];
+    });
+    for(var i=0, len=store.length; i<len; i++){
+        tbl.appendChild(store[i][1]);
+    }
+    store = null;
+}
+
+
+
 document.querySelector('#myInput').addEventListener('keyup', filterTable, false);
+document.querySelector('#sT').addEventListener('click', sortT, false);
 document.querySelector('#clearbutton').addEventListener('click', filterTable, false);
     </script>
 
